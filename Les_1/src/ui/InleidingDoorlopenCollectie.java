@@ -1,6 +1,7 @@
 package ui;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class InleidingDoorlopenCollectie {
@@ -13,8 +14,43 @@ public class InleidingDoorlopenCollectie {
 		woorden.add("Eerste");
 		woorden.add("Tweede");
 		woorden.add("Derde");
+		woorden.add("\n");
 		
 		
+		// array = .length
+		// lijst = .size
 		
+		for (int i = 0; i < woorden.size(); i++)
+			System.out.println(woorden.get(i));
+		
+		// Efficiënter dan standard forlus omdat hier een iterable wordt geïmplementeerd. 
+		for (String elem : woorden) 
+			System.out.println(elem);
+		
+		// Onderstaande is hetzelfde als enhanced for.
+		// plaatst een pointer net voor het eerste element. 
+		Iterator<String> it = woorden.iterator();
+		
+		while(it.hasNext())
+			System.out.println(it.next());
+		
+		
+		// enhanced for kan enkel lezen Onderstaande code compileert een fout
+		for (String elem : woorden)
+			if (elem.equals(elem))
+				woorden.remove(elem);
+		
+		// oplossing op bovenstaande fout
+		while(it.hasNext()) {
+			String s = it.next();
+			if (s.equals("Derde"))
+				it.remove();
+		}
+		
+		// Overlopen --gebruik--> enhanced for
+		// overlopen en verwijderen --gebruik--> Iterator (bij alles)
+		// Overlopen + positie bepalen + toevoegen en verwijderen --gebruik--> ListIterator (enkel bij lijsten)
+		
+			
 	}
 }
