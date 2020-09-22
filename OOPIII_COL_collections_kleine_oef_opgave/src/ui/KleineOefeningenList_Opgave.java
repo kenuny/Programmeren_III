@@ -1,6 +1,8 @@
 package ui;
 
 import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class KleineOefeningenList_Opgave {
 
@@ -52,26 +54,32 @@ public class KleineOefeningenList_Opgave {
 	public void naarHoofdletterOmzetten(List<String> list) {
 		// Alle strings van list worden omgezet naar hoofdletters
 		// -------------------------------------------------------------
+		
 		// JAVA 7:
 		ListIterator<String> iterator = list.listIterator();
 		
 		while (iterator.hasNext()) { 
 			String woord = iterator.next();
 			iterator.set(woord.toUpperCase());
-        }
-		
-
+		}
 
 		// JAVA 8:
-
+		// list.replaceAll(w -> w.toUpperCase());
+		list.replaceAll(String::toUpperCase);
+		
+		
 	}
 
 	public List<String> naarKleineLettersOmzetten(List<String> list) {
-		//// De strings van list worden omgezet naar kleine letters en worden
-		// als nieuwe List<String> teruggegeven.
-		// -------------------------------------------------------------
+		
 		// JAVA 8:
-		return null;
+		// stream overloopt elk element in list
+		// map gaat dan elk element in kleine letter plaatsen
+		// collector zorgt er dan voor dat al de elementen terug in de lijst zitten.
+		
+		return list.stream()
+				   .map(w -> w.toLowerCase())
+				   .collect(Collectors.toList());
 	}
 
 	public static void main(String args[]) {
@@ -87,3 +95,6 @@ public class KleineOefeningenList_Opgave {
 // Creëer een tweede lege arrayList (list2)
 // alle elementen van list kopieren naar een tweede arrayList list2 (= 1
 // instructie)
+////De strings van list worden omgezet naar kleine letters en worden
+// als nieuwe List<String> teruggegeven.
+// -------------------------------------------------------------
