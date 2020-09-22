@@ -57,5 +57,8 @@ public class InleidingDoorlopenCollectie {
 		
 		woorden.forEach(elem -> System.out.println(elem));
 		woorden.forEach(System.out::println);
+		
+		// linked list geschikt toevoegen en verwijderen.
+		// arraylist is goed om elementen op te zoeken.
 	}
 }
