@@ -35,11 +35,12 @@ public class KleineOefeningenList_Opgave {
         //Geef alle elementen van de List weer (laat een spatie tussen elk element).
         //Gebruik printf*/
         //--------------------------------------------------------------------------
-        System.out.printf("%s%n%s", oplossing, "           ");
+        
+	   System.out.printf("%s%n%s", oplossing, "           ");
 
-
-
-        System.out.println("\n");
+	   for (String e : list)
+		System.out.printf("%s", e);
+	   System.out.println("\n");
 
     }
 
