@@ -4,74 +4,86 @@ import java.util.*;
 
 public class KleineOefeningenList_Opgave {
 
-    private static final String COLORS[] = {"red", "white", "blue"};
+	private static final String COLORS[] = { "red", "white", "blue" };
 
-    //declareer list en list2 van type List. De collections zullen Strings bijhouden.
-    //------------------------------------------------------------------------------
-    public KleineOefeningenList_Opgave() {
+	private List<String> list;
+	private List<String> list2;
 
-        // creï¿½er arrayList list en vul op met { "red", "white", "blue" }  (= 1 instructie)
-        //----------------------------------------------------
-        weergevenLijst("oplossing: red white blue ", list);
+	public KleineOefeningenList_Opgave() {
 
-		// Creï¿½er een tweede lege arrayList (list2)
-		// -------------------------------------------
+		// Array omgezet naar list en meegegeven.
+		list = new ArrayList<>(Arrays.asList(COLORS));
+		weergevenLijst("oplossing: red white blue ", list);
+
+		// lege arraylist en opvullen via addAll
+		list2 = new ArrayList<>();
+		list2.addAll(list);
+
+		naarHoofdletterOmzetten(list);
+		weergevenLijst("oplossing: alle elementen van list in hoofdletters", list);
+
+		list = naarKleineLettersOmzetten(list);
+		weergevenLijst("oplossing: alle elementen van list in kleine letters", list);
+
+	} // end constructor
+
+	public <E> void weergevenLijst(String oplossing, List<E> list) {
+		// Geef alle elementen van de List weer (laat een spatie tussen elk element).
+		// Gebruik printf*/
+		// List<String> veranderen door E typeparametersectie voor de teruggeefwaarde
+		// plaatsen
+		// --------------------------------------------------------------------------
+
+		System.out.printf("%s%n%s", oplossing, "           ");
+
+		for (E e : list)
+			System.out.printf("%s", e);
+		System.out.println("\n");
+
+		// Initieel
+		// public * void weerg...(String oplossing, List<*String> ..)
+		// for(*String ..
+
+		// of met lambda
+		list.forEach(e -> System.out.printf("%s", e));
+
+	}
+
+	public void naarHoofdletterOmzetten(List<String> list) {
+		// Alle strings van list worden omgezet naar hoofdletters
+		// -------------------------------------------------------------
+		// JAVA 7:
+		ListIterator<String> iterator = list.listIterator();
+		
+		while (iterator.hasNext()) { 
+			String woord = iterator.next();
+			iterator.set(woord.toUpperCase());
+        }
 		
 
-		// alle elementen van list kopiï¿½ren naar een tweede arrayList list2 (= 1
-		// instructie)
-		// ---------------------------------------------------------------------------------
-		
-		
-        naarHoofdletterOmzetten(list);
-        weergevenLijst("oplossing: alle elementen van list in hoofdletters", list);
 
-        list = naarKleineLettersOmzetten(list);
-        weergevenLijst("oplossing: alle elementen van list in kleine letters", list);
+		// JAVA 8:
 
-   } // end constructor
+	}
 
-   public <E> void weergevenLijst(String oplossing, List<E> list) {
-        //Geef alle elementen van de List weer (laat een spatie tussen elk element).
-        //Gebruik printf*/
-	    //List<String> veranderen door E typeparametersectie voor de teruggeefwaarde plaatsen
-        //--------------------------------------------------------------------------
-        
-	   System.out.printf("%s%n%s", oplossing, "           ");
+	public List<String> naarKleineLettersOmzetten(List<String> list) {
+		//// De strings van list worden omgezet naar kleine letters en worden
+		// als nieuwe List<String> teruggegeven.
+		// -------------------------------------------------------------
+		// JAVA 8:
+		return null;
+	}
 
-	   for (E e : list)
-		System.out.printf("%s", e);
-	   System.out.println("\n");
-	   
-	   // Initieel
-	   // public * void weerg...(String oplossing, List<*String> ..)
-	   // for(*String ..
-	   
-	   // of met lambda
-	   list.forEach(e -> System.out.printf("%s", e));
-
-    }
-
-    public void naarHoofdletterOmzetten(List<String> list) {
-        //Alle strings van list worden omgezet naar hoofdletters
-        //-------------------------------------------------------------
-        //JAVA 7:
-
-        //JAVA 8:
-
-    }
-
-    public List<String> naarKleineLettersOmzetten(List<String> list)
-    {
-       ////De strings van list worden omgezet naar kleine letters en worden
-        //als nieuwe List<String> teruggegeven.
-       //-------------------------------------------------------------
-       //JAVA 8:
-        return null;
-    }
-
-    public static void main(String args[]) {
-        new KleineOefeningenList_Opgave();
-    }
+	public static void main(String args[]) {
+		new KleineOefeningenList_Opgave();
+	}
 
 } // end class KleineOefeningenList_Opgave
+
+// comments
+
+//declareer list en list2 van type List. De collections zullen Strings bijhouden
+// Creëer arrayList list en vul op met { "red", "white", "blue" }  (= 1 instructie)
+// Creëer een tweede lege arrayList (list2)
+// alle elementen van list kopieren naar een tweede arrayList list2 (= 1
+// instructie)
