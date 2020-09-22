@@ -36,9 +36,9 @@ public class InleidingDoorlopenCollectie {
 		
 		
 		// enhanced for kan enkel lezen Onderstaande code compileert een fout
-		for (String elem : woorden)
-			if (elem.equals(elem))
-				woorden.remove(elem);
+//		for (String elem : woorden)
+//			if (elem.equals(elem))
+//				woorden.remove(elem);
 		
 		// oplossing op bovenstaande fout
 		while(it.hasNext()) {
@@ -52,5 +52,10 @@ public class InleidingDoorlopenCollectie {
 		// Overlopen + positie bepalen + toevoegen en verwijderen --gebruik--> ListIterator (enkel bij lijsten)
 		
 			
+		// lamba's
+		System.out.println("lambda's \n\n");
+		
+		woorden.forEach(elem -> System.out.println(elem));
+		woorden.forEach(System.out::println);
 	}
 }
