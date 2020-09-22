@@ -31,16 +31,21 @@ public class KleineOefeningenList_Opgave {
 
    } // end constructor
 
-   public void weergevenLijst(String oplossing, List<String> list) {
+   public <E> void weergevenLijst(String oplossing, List<E> list) {
         //Geef alle elementen van de List weer (laat een spatie tussen elk element).
         //Gebruik printf*/
+	    //List<String> veranderen door E typeparametersectie voor de teruggeefwaarde plaatsen
         //--------------------------------------------------------------------------
         
 	   System.out.printf("%s%n%s", oplossing, "           ");
 
-	   for (String e : list)
+	   for (E e : list)
 		System.out.printf("%s", e);
 	   System.out.println("\n");
+	   
+	   // Initieel
+	   // public * void weerg...(String oplossing, List<*String> ..)
+	   // for(*String ..
 
     }
 
