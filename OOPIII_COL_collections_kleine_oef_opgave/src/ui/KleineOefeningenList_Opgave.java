@@ -46,6 +46,9 @@ public class KleineOefeningenList_Opgave {
 	   // Initieel
 	   // public * void weerg...(String oplossing, List<*String> ..)
 	   // for(*String ..
+	   
+	   // of met lambda
+	   list.forEach(e -> System.out.printf("%s", e));
 
     }
 
