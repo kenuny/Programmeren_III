@@ -1,5 +1,7 @@
 package domein;
 
+import java.util.Objects;
+
 public class Student  
 {
 
@@ -73,6 +75,33 @@ public class Student
     {
         return "\nStudent{" + "stamboeknr=" + stamboeknr + ", naam=" + naam + ", voornaam=" + voornaam + ", woonplaats=" + woonplaats + '}';
     }
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(stamboeknr);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return stamboeknr == other.stamboeknr;
+	}
+	
+	
+	// comparable and comparetor
+	public int compareTo(Student o) {
+		return Long.compare(this.stamboeknr, o.stamboeknr);
+	}
+    
+    
 
     
     

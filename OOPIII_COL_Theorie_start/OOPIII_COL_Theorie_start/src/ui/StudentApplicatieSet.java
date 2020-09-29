@@ -26,8 +26,13 @@ public class StudentApplicatieSet
         lijstStudenten.add(new Student(20132565,"Fransen","Luc","Gent"));
         
 
-		Set<Student> set1 = new HashSet<>(lijstStudenten);
-		System.out.println(set1);
+		Set<Student> setHash = new HashSet<>(lijstStudenten);
+		System.out.println(setHash);
+		
+		
+		// geen foutmelding
+		Set<Student> setTree = new HashSet<>(setHash);
+		System.out.println(setTree);
        
     }
 }
