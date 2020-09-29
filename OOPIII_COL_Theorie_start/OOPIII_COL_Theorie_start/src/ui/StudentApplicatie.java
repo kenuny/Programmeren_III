@@ -25,8 +25,19 @@ public class StudentApplicatie
         lijstStudenten.add(new Student(20132564,"Karels","Matt","Gent"));
         lijstStudenten.add(new Student(20132565,"Fransen","Luc","Gent"));
          
+        // werkt
         System.out.println(lijstStudenten);
         
+        // werkt
+        Collections.sort(lijstStudenten, new StudentSorterenVolgensNaamEnVoornaam());
+        System.out.println("gesorteerd volgens naam: " + lijstStudenten);
         
+        // werkt niet
+        Collections.sort(lijstStudenten);
+        System.out.println("gesorteerd: " + lijstStudenten);
+        
+        // natuurlijke sortering
+        // afwijken kan door null te vervangen door new StudentSorterenVolgensNaamEnVoornaam
+        lijstStudenten.sort(null);
     }
 }
