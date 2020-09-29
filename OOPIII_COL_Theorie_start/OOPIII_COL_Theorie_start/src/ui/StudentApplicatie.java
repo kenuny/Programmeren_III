@@ -33,8 +33,8 @@ public class StudentApplicatie
         System.out.println("gesorteerd volgens naam: " + lijstStudenten);
         
         // werkt niet
-        // Collections.sort(lijstStudenten);
-        // System.out.println("gesorteerd: " + lijstStudenten);
+         Collections.sort(lijstStudenten);
+         System.out.println("gesorteerd: " + lijstStudenten);
         
         // natuurlijke sortering
         // afwijken kan door null te vervangen door new StudentSorterenVolgensNaamEnVoornaam

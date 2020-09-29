@@ -2,7 +2,7 @@ package domein;
 
 import java.util.Objects;
 
-public class Student  
+public class Student implements Comparable<Student>
 {
 
     private final long stamboeknr;

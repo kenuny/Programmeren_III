@@ -31,7 +31,7 @@ public class StudentApplicatieSet
 		
 		
 		// geen foutmelding
-		Set<Student> set2 = new HashSet<>(set1);
+		Set<Student> set2 = new TreeSet<>(set1);
 		System.out.println(set2);
        
     }
