@@ -53,12 +53,12 @@ public class OefAlgoritme {
 		//});
 		
 		// !!WERKT NIET!! Betere oplossing in Java 8:
-		boeken.sort(
-				Comparator.comparing(Boek::getTitel())
-						  .thenComparing(Comparator.comparing
-								  (Boek::getIsbn_nr().reversed())
-		);
+//		boeken.sort(
+//				Comparator.comparing(Boek::getTitel)
+//						  .thenComparing(Comparator.comparing(Boek::getIsbn_nr.reversed()));
 
+		boeken.sort(Comparator.comparing(Boek::getTitel).thenComparing(Comparator.comparing(Boek::getIsbn_nr).reversed()));
+		
 		System.out.println("gesorteerd : ");
 		toonLijst(boeken);
 
