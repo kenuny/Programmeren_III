@@ -83,7 +83,7 @@ public class OefFruit2_opgave {
 		//}
         
         // Java 8: overlopen d.m.v. stream
-        // Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
+        Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
         
         // Java 8: manier 2
         // list = Arrays.stream(kist)
