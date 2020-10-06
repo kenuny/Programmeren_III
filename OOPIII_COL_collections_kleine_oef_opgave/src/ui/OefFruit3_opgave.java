@@ -1,6 +1,10 @@
 package ui;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class OefFruit3_opgave {
@@ -10,15 +14,30 @@ public class OefFruit3_opgave {
         {"banaan", "mango", "citroen", "kiwi", "zespri", "pruim"},
         {"peche", "lichi", "kriek", "kers", "papaya"}};
 
-        List<String> list =           ;
+        List<String> list =  Arrays.stream(kist)
+        						   .flatMap(Arrays::stream)
+        						   .collect(Collectors.toList());
+        
         Scanner in = new Scanner(System.in);
 
         //declaratie + creatie map
         //------------------------------
-                    fruit = 
-                            
+        Map <String, Double> fruit = new TreeMap<>();
+        Scanner scan = new Scanner(System.in);
+        
+        list.forEach(eenFruit -> fruit.put(eenFruit, null));
+        fruit.entrySet().forEach(eenEntry -> {
+        	System.out.printf("Prijs van %s", eenEntry.getKey());
+        	double prijs = scan.nextDouble();
+        	eenEntry.setValue(prijs);
+        	
+        });
+        
+        fruit.forEach((sleutel, waarde) -> System.out.printf("%s%t%.2f%n", sleutel, waarde));
+                         
+        
         /*Berg de fruit list van vorige oefeningen in een boom
- op zodat dubbels geï¿½limineerd worden.
+ op zodat dubbels geïlimineerd worden.
  Er moet ook de mogelijkheid zijn de bijhorende prijs
  (decimale waarde) bij te houden.*/
         //------------------------------------------------------------
