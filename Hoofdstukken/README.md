@@ -1,25 +1,29 @@
 # Programmeren III
 
+**Hoofdstuk 16:** Collection framework
 
-### Linux
+ - Slides Theorie: 
+    - Slides H16: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_2TIN_stud.pdf).
+    - Verkorte weergave Collecties: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/VerkorteWeergaveCollecties.pdf).
+    - Herhaling Comparable: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_ExtraComparable.pdf).
+ - Slides Oefeningen:
+    - Oefeningen: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Oefeningen/Oefeningenreeks_H16.pdf).
 
-| Lesweek     | Datum      | Opmerking                                                    |
-| ----------- | ---------- | ------------------------------------------------------------ |
-| Les 1       | 22/09/2020 |                                                              |
-| Les 2       | 29/09/2020 |                                                              |
-| Les 3       | 06/10/2020 |                                                              |
-| Les 4       | 13/10/2020 |                                                              |
-| Les 5       | 20/10/2020 |                                                              |
-| Les 6       | 27/10/2020 |                                                              |
-| Les 7       | 03/11/2020 |                                                              |
-| Les 8       | 10/11/2020 |                                                              |
-| Les 9       | 17/11/2020 |                                                              |
-| Les 10      | 24/11/2020 |                                                              |
-| Les 11      | 01/12/2020 |                                                              |
-| Les 12      | 08/12/2020 |                                                              |
-| Les 13 (IW) | 15/12/2020 |                                                              |
+<br>
 
+**Hoofdstuk 17:** Lambda's en streams
 
+ - Slides Theorie: 
+    - Slides H17: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Slides_H17_LambdasEnStreams.pdf).
+    - Aanvulling: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Lambdas_AanvullingBijSlides.pdf).
+- Slides Oefeningen:
+  - Oefeningen: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Oefeningen/OOPIII_Oefening_H17_2021.pdf).
 
+<br>
 
+**Hoofdstuk 20:** Generiek programmeren
 
+ - Slides Theorie: 
+    - Slides H20: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_20/Theorie/SlidesH20_GeneriekeMethodenEnKlassen.pdf).
+- Slides oefeningen:
+  - Oefeningen H20: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_20/Oefeningen/Oefeningenreeks_H20.pdf).
