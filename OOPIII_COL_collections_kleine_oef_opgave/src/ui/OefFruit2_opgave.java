@@ -86,9 +86,9 @@ public class OefFruit2_opgave {
         Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
         
         // Java 8: manier 2
-        // list = Arrays.stream(kist)
-        //			 .flatMap(Arrays::stream)
-        //			 .collect(Collectors.toList());
+//         list = Arrays.stream(kist)
+//        			 .flatMap(Arrays::stream)
+//        			 .collect(Collectors.toList());
         
         
         mand = list.toArray(new String[list.size()]);
