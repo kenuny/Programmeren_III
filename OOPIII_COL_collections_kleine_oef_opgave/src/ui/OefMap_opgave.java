@@ -90,7 +90,10 @@ public class OefMap_opgave {
     public void toonAlleSleutels(Map<Integer, Auteur> map) {
         //Alle sleutels van de map worden op het scherm weergegeven.
         //---------------------------------------------------------------
-
+    	// JAVA 8:
+    	map.keySet()
+    	   .forEach(eenAuteursID -> System.out.println(eenAuteursID));
+    
         System.out.println();
     }
 
@@ -98,8 +101,12 @@ public class OefMap_opgave {
         /*Alle gegevens van de map worden op het scherm weergegeven.
 		Per lijn wordt een auteursnr, naam en voornaam weergegeven.*/
         //---------------------------------------------------------------
+    		
+    		// Java 8:
+    		map.forEach((id, auteur) -> System.out.printf("%d\t%s%n", id, auteur));
 
-        System.out.println();
+    		System.out.println();
+    	
     }
 
     public static void main(String args[]) {
