@@ -36,40 +36,54 @@ class Auteur {
 public class OefMap_opgave {
 
     public OefMap_opgave() {
-
+ 
+    	
+    	
+    	
 // we zullen een hashmap gebruiken waarbij auteursid de sleutel is en
 // de waarde is naam en voornaam van Auteur.
-        //Creï¿½er de lege hashMap "auteurs"; de sleutel is van type Integer, de waarde van type Auteur
+        // Creëer de lege hashMap "auteurs"; de sleutel is van type Integer, de waarde van type Auteur
         //----------------------------------------------------------------------------------
+    	Map<Integer, Auteur> auteurs = new HashMap<>();
+
         
         //Voeg toe aan de hashmap: auteursID = 9876, naam = Gosling, voornaam = James
         //Voeg toe aan de hashmap: auteursID = 5648, naam = Chapman, voornaam = Steve
         //-------------------------------------------------------------------------------
+        auteurs.put(9876, new Auteur("Gosling", "James"));
+        auteurs.put(5648, new Auteur("Chapman", "Steve"));
+        
         
         //Wijzig de voornaam van Chapman: John ipv Steve
         //----------------------------------------------
+        Auteur auteurChapman = auteurs.get(5648);
+        auteurChapman.setVoornaam("John");;
+        
         
         //Komt de auteursID 1234 voor in de hashmap
         //-----------------------------------------
-        /*if (              )
-		System.out.println("auteursID 1234 komt voor\n");
+        if (auteurs.containsKey(1234))
+        	System.out.println("auteursID 1234 komt voor\n");
         else
-		System.out.println("auteursID 1234 komt niet voor\n");
-         */
-        //Toon de naam en voornaam van auteursID 5648
+        	System.out.println("auteursID 1234 komt niet voor\n");
+         
+        
+        // Toon de naam en voornaam van auteursID 5648
         //-------------------------------------------
-        /*
-		Auteur auteur =
+        
+		Auteur auteur = auteurs.get(5648);
 		if (auteur != null)
 			System.out.println(auteur);
-         */
+         
         toonAlleAuteurs(auteurs);
 
-        //Alle auteursID's worden in stijgende volgorde weergegeven.
-        //  1) de hashMap copiï¿½ren naar een treeMap (= 1 instructie)
+        // Alle auteursID's worden in stijgende volgorde weergegeven.
+        //  1) de hashMap copiëren naar een treeMap (= 1 instructie)
         //  2) roep de methode toonAlleSleutels op.
         //  3) roep de methode toonAlleAuteurs op.
         //---------------------------------------------------------------
+        Map<Integer, Auteur> treeMap = new TreeMap<>(auteurs);
+        toonAlleAuteurs(treeMap);
         
     }
 
