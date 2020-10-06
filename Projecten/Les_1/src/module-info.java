@@ -1,2 +1,0 @@
-module Les_1 {
-}
