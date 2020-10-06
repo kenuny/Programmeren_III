@@ -1,11 +1,11 @@
 # Programmeren III
 
 
-### Linux
+### 
 
 | Lesweek     | Datum      | Opmerking                                                    |
 | ----------- | ---------- | ------------------------------------------------------------ |
-| Les 1       | 22/09/2020 |                                                              |
+| Les 1       | 22/09/2020 | Theorie: inleiding tot Collection framework d.m.v. de [slides](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_2TIN_stud.pdf).<br />Oefeningen: maken van |
 | Les 2       | 29/09/2020 |                                                              |
 | Les 3       | 06/10/2020 |                                                              |
 | Les 4       | 13/10/2020 |                                                              |
