@@ -1,3 +1,0 @@
-# lessen programmeren nog updaten
-
-
