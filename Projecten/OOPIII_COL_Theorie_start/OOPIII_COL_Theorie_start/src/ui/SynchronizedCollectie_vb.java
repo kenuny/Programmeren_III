@@ -9,7 +9,7 @@ public class SynchronizedCollectie_vb
 {
     public static void main(String[] args)
     {
-        /*Een programma dat financiÃ«le transacties voor de klanten
+        /*Een programma dat financiële transacties voor de klanten
         * van een bank verricht kan uit meerdere threads bestaan
         * om verschillende klanten tegelijkertijd hun transactie te laten uitvoeren.*/
         List<Rekening> lijst = 
