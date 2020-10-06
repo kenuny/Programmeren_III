@@ -38,6 +38,26 @@ public class OefAlgoritme {
 		// Sorteer de arrayList op titel in STIJGENDE volgorde. Bij gelijke titels
 		// sorteren op isbn_nr in DALENDE volgorde.
 		// ---------------------------------------------------------------
+		// Java 7:
+		// Collections.sort(boeken, new BoekComparator());
+		
+		// Java 8:
+		//boeken.sort((boek1, boek2) -> {
+		// 	int boekCompare = boek1.getTitel().compareTo(boek2.getTitel());
+		//	if (boekCompare != 0) {
+		//		return boekCompare;
+		//	}
+		//	
+		//	return Long.compare(boek2.getIsbn_nr(), boek1.getIsbn_nr());
+		//	
+		//});
+		
+		// Betere oplossing in Java 8:
+		boeken.sort(
+				Comparator.comparing(Boek::getTitel())
+						  .thenComparing(Comparator.comparing
+								  (Boek::getIsbn_nr().reversed())
+		);
 
 		System.out.println("gesorteerd : ");
 		toonLijst(boeken);
@@ -53,20 +73,32 @@ public class OefAlgoritme {
 		// Toon het grootste element van de array getallen
 		// -----------------------------------------------
 		// java7
-
+		// System.out.printf("max = %d (oplossing = 3)%n", Collections.max(Arrays.asList(getallen)));
+		
+		// java 8: beiden geven hetzelfde resultaat in dit geval is stream langer.
+		System.out.printf("max = %d (oplossing = 3)%n", Arrays.stream(getallen).max(Integer::compare).get());
+		
+		
 		// Toon het kleinste element van de array getallen
 		// -----------------------------------------------
 		// java7
+		// System.out.printf("max = %d (oplossing = 3)%n", Arrays.stream(getallen).min(Integer::compare).get());
+
+		// Java 8: geeft zelfde resultaat als 7
+		System.out.printf("max = %d (oplossing = 3)%n", Arrays.stream(getallen).min(Integer::compare).get());
 
 	}
 
 	public <E> void toonLijst(Collection<E> collection) {
 		// java7
-		for (E element : collection) {
-			System.out.printf("%s%n", element);
-		}
+		//for (E element : collection) {
+		//	System.out.printf("%s%n", element);
+		//}
 
-		System.out.println("\n");
+		//System.out.println("\n");
+		
+		// Java 8
+		collection.forEach(element -> System.out.printf("%s%n", element));
 	}
 
 	public static void main(String args[]) {
