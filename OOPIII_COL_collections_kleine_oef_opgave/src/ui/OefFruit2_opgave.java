@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class CollectionOperaties {
     
@@ -82,7 +83,12 @@ public class OefFruit2_opgave {
 		//}
         
         // Java 8: overlopen d.m.v. stream
-        Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
+        // Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
+        
+        // Java 8: manier 2
+        // list = Arrays.stream(kist)
+        //			 .flatMap(Arrays::stream)
+        //			 .collect(Collectors.toList());
         
         
         mand = list.toArray(new String[list.size()]);

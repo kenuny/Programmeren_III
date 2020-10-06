@@ -52,7 +52,7 @@ public class OefAlgoritme {
 		//	
 		//});
 		
-		// Betere oplossing in Java 8:
+		// !!WERKT NIET!! Betere oplossing in Java 8:
 		boeken.sort(
 				Comparator.comparing(Boek::getTitel())
 						  .thenComparing(Comparator.comparing
