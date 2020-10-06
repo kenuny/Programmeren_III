@@ -75,9 +75,15 @@ public class OefFruit2_opgave {
         System.out.println(Arrays.deepToString(kist)); // om de array af te printen
 
         List<String> list = new ArrayList<>();
-        for (String[] eenKist : kist) {
-			list.addAll(Arrays.asList(eenKist));
-		}        
+        
+        // Java 7: enhanced-for
+        // for (String[] eenKist : kist) {
+		//	list.addAll(Arrays.asList(eenKist));
+		//}
+        
+        // Java 8: overlopen d.m.v. stream
+        Arrays.stream(kist).forEach(eenKist -> list.addAll(Arrays.asList(eenKist)));
+        
         
         mand = list.toArray(new String[list.size()]);
         Arrays.sort(mand);
