@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import domein.Student;
 
@@ -28,6 +31,9 @@ public class StudentApplicatieMap {
 		for (Student st : lijstStudenten) {
 			map1.put(st.getStamboeknr(), st);
 		}
+
+		Map<Long, Student> map2 = lijstStudenten.stream().collect(Collectors.toMap(Student::getStamboeknr, Function.identity()));
+		// Map<Long, Student> map2 = lijstStudenten.stream().collect(Collectors.toMap(s -> s.getStamboeknr(), s -> s))
 
 		// System.out.println(map1);
 
