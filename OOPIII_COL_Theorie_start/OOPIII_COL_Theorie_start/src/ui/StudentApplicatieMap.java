@@ -55,24 +55,31 @@ public class StudentApplicatieMap {
 		}
 
 		// Overzicht per woonplaats
-		Map<String, List<Student>> map2 = new TreeMap<>();
+		Map<String, List<Student>> map11 = new TreeMap<>();
 
 		String huidigeKey = "";
 		for (Student s : lijstStudenten) {
 			huidigeKey = s.getWoonplaats();
 
 			// Enkel de eerste keer moet er een nieuwe ArrayList aangemaakt worden.
-			if (!map2.containsKey(huidigeKey)) {
-				map2.put(huidigeKey, new ArrayList<>());
+			if (!map11.containsKey(huidigeKey)) {
+				map11.put(huidigeKey, new ArrayList<>());
 			}
 
-			map2.get(huidigeKey).add(s);
+			map11.get(huidigeKey).add(s);
 		}
 
-		for (Map.Entry<String, List<Student>> entry : map2.entrySet()) {
+		for (Map.Entry<String, List<Student>> entry : map11.entrySet()) {
 
 			System.out.printf("%n%s - %s", entry.getKey(), entry.getValue());
 		}
-
-	}
+		
+		// methode 2 vooroverzicht per woonplaats (Komt op het examen! groupingBy)
+		Map<String, List<Student>> map4 = lijstStudenten.stream()
+					  .collect(Collectors.groupingBy(Student::getWoonplaats));
+		
+		// methode 2 vooroverzicht per woonplaats (Komt op het examen! groupingBy)
+		Map<String, List<Student>> map5 = lijstStudenten.stream()
+														.collect(Collectors.groupingBy(Student::getWoonplaats, TreeMap::new, Collectors.toList()));
+		} // TreeMap::new --> constructor van treemap (maak nieuwe treemap)
 }
