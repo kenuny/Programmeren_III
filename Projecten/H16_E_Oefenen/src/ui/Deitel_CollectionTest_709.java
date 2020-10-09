@@ -46,6 +46,7 @@ public class Deitel_CollectionTest_709 {
 		while (it.hasNext())
 			if (collectionRemove.contains(it.next()))
 				it.remove();
+	
 
 	}
 
