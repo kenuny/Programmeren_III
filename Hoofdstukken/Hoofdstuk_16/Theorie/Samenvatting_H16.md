@@ -46,5 +46,5 @@
 - `List` erft rechtstreeks van de interface `Collection`.
 - `List` implementeer de klassen `ArrayList<E>`, `LinkedList<E>` en `Vector<E>`.
 
-- <u>Geordende collection</u> waarbij <u>duplicaten toegelaten</u> zijn.
+- Geordende collection waarbij <u>duplicaten toegelaten</u> zijn.
 - Index start op <u>0</u>.
