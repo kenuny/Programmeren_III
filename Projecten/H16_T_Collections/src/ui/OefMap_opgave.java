@@ -78,7 +78,7 @@ public class OefMap_opgave {
         toonAlleAuteurs(auteurs);
 
         // Alle auteursID's worden in stijgende volgorde weergegeven.
-        //  1) de hashMap copiëren naar een treeMap (= 1 instructie)
+        //  1) de hashMap kopiëren naar een treeMap (= 1 instructie)
         //  2) roep de methode toonAlleSleutels op.
         //  3) roep de methode toonAlleAuteurs op.
         //---------------------------------------------------------------
