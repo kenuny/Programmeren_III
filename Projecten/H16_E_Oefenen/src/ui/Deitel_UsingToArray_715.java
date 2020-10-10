@@ -13,7 +13,6 @@ public class Deitel_UsingToArray_715 {
 		 * Array wordt doorgegeven aan de linkedlist. Arrays.asList(array).
 		 * Vervolgens elementen toevoegen aan de lijst.
 		 * Lijst terug omzetten naar array en printen.
-		 * 
 		 */
 
 		String[] colors = { "black", "blue", "yellow" };
