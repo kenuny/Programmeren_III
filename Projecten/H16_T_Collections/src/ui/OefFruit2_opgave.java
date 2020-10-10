@@ -55,19 +55,20 @@ class CollectionOperaties {
 
 		/*
 		 * Zoek door middel van binarySearch of de fruitsoort als is toegevoegd aan de
-		 * list. Indien de binarySearch een negatieve waarde teruggeeft zit de fruitsoort er nog niet in.
-		 * Indien de positieve waarde wordt teruggeven zit de fruitsoort er in.
-		 * De waarde zowel negatief als positief is de absolute indexwaarde.
+		 * list. Indien de binarySearch een negatieve waarde teruggeeft zit de
+		 * fruitsoort er nog niet in. Indien de positieve waarde wordt teruggeven zit de
+		 * fruitsoort er in. De waarde zowel negatief als positief is de absolute
+		 * indexwaarde.
 		 * 
-		 * In deze opdracht indien de fruitsoort er nog niet inzit dan wordt ze toegevoegd aan de list.
+		 * In deze opdracht indien de fruitsoort er nog niet inzit dan wordt ze
+		 * toegevoegd aan de list.
 		 */
 
 		int index = Collections.binarySearch(list, keyFruitSoort);
-		
+
 		if (index < 0)
 			list.add(((index * -1) - 1), keyFruitSoort);
-		
-	
+
 //		int index = Collections.binarySearch(list, keyFruitSoort);
 //		if (index != -1) {
 //			list.add(((index * -1) - 1), keyFruitSoort);
@@ -81,7 +82,6 @@ class CollectionOperaties {
 public class OefFruit2_opgave {
 
 	public static void main(String args[]) {
-		/*-----------------------------------------------------------------------------*/
 		/*
 		 * kist: Maakt een 2D array aan met fruitsoorten. list: Maakt een lege
 		 * dynamische lijst aan.
@@ -98,7 +98,6 @@ public class OefFruit2_opgave {
 		System.out.println(Arrays.deepToString(kist));
 		System.out.println("\n");
 
-		/*-----------------------------------------------------------------------------*/
 		/*
 		 * Overloopt de 2D array met een enhanced for. Elke kist (totaal van 3 kisten)
 		 * bevat meerdere friutsoorten. De kisten met hun fruit worden geconcateneerd
@@ -125,25 +124,27 @@ public class OefFruit2_opgave {
 		System.out.println(list);
 		System.out.println("\n");
 
-		/*-----------------------------------------------------------------------------*/
 		/*
 		 * list wordt van dynamische lijst omgezet naar een array en meegegeven aan 1D
 		 * array mand. Vervolgens wordt de 1D array gesorteerd.
 		 */
+
 		String[] mand = list.toArray(new String[list.size()]);
 		Arrays.sort(mand);
 		System.out.println("Print de mand uit, waarvan de list is omgezet in een array: ");
 		System.out.println(Arrays.toString(mand));
 		System.out.println();
 
-		/*-----------------------------------------------------------------------------*/
 		/*
-		 * De void methode verwijderletter van de klasse CollectionOperaties wordt opgeropen.
-		 * De methode moet geen list teruggeven. Operaties van het type list worden automatisch uitgevoerd.
+		 * De void methode verwijderletter van de klasse CollectionOperaties wordt
+		 * opgeropen. De methode moet geen list teruggeven. Operaties van het type list
+		 * worden automatisch uitgevoerd.
 		 * 
-		 * verwijderOpLetter(lijst, letter) -> Verwijdert elk object in de list dat begint met de opgegeven letter.
-		 * verwijderSequence(lijst, woord) -> Verwijdert elk object in de list dat zich tussen het eerste en laatste woord bevindt.
+		 * verwijderOpLetter(lijst, letter) -> Verwijdert elk object in de list dat
+		 * begint met de opgegeven letter. verwijderSequence(lijst, woord) -> Verwijdert
+		 * elk object in de list dat zich tussen het eerste en laatste woord bevindt.
 		 */
+		
 		CollectionOperaties.verwijderOpLetter(list, 'p');
 		System.out.println("na verwijder letter ('p'):  ");
 		System.out.println(list);
@@ -154,26 +155,28 @@ public class OefFruit2_opgave {
 		System.out.println(list);
 		System.out.println();
 
-		/*-----------------------------------------------------------------------------*/
 		/*
-		 * Plaatst de huidige list na bewerking van kiwi sequence in een array en sorteert deze array oplopen.
+		 * Plaatst de huidige list na bewerking van kiwi sequence in een array en
+		 * sorteert deze array oplopen.
 		 */
-        mand = list.toArray(new String[list.size()]);
-        Arrays.sort(mand);
+		
+		mand = list.toArray(new String[list.size()]);
+		Arrays.sort(mand);
 
-        System.out.println("Plaatst overblijvende list van verwijderSequence in array: ");
+		System.out.println("Plaatst overblijvende list van verwijderSequence in array: ");
 		System.out.println(Arrays.toString(mand));
 		System.out.println();
 
-		/*-----------------------------------------------------------------------------*/
 		/*
-		 * De methode addOrder voegt een element toe aan de list als het er nog niet op staat.  
+		 * De methode addOrder voegt een element toe aan de list als het er nog niet op
+		 * staat.
 		 * 
-		 * In het geval van sapodilla geeft de binarySearch -6 terug.
-		 * Vermenigvuldig dit met -1 en je krijgt de absolute waarde trek er nog een -1 af omdat het zero-based is.
-		 * Dat is de locatie dat de fruitsoort moet worden toegevoegd in een gesorteerde list.
+		 * In het geval van sapodilla geeft de binarySearch -6 terug. Vermenigvuldig dit
+		 * met -1 en je krijgt de absolute waarde trek er nog een -1 af omdat het
+		 * zero-based is. Dat is de locatie dat de fruitsoort moet worden toegevoegd in
+		 * een gesorteerde list.
 		 */
-		
+
 		list.sort(null);
 		CollectionOperaties.addOrder(list, "sapodilla");
 		System.out.println(list);
