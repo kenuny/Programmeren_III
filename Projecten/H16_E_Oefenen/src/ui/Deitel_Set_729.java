@@ -11,7 +11,7 @@ public class Deitel_Set_729 {
 	public static void main(String[] args) {
 
 		/*
-		 * Set: is een collection van unieke elementen? (m.a.w. verwijdert duplciaten).
+		 * Set: is een collection van unieke elementen? (m.a.w. verwijdert duplicaten).
 		 * - HashSet: sorteert elementen ongeordend in een hash table. 
 		 * - TreeSet: sorteert elementen geordend in een tree table.
 		 */
