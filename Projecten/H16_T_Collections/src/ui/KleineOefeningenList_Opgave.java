@@ -52,8 +52,7 @@ public class KleineOefeningenList_Opgave {
 
 		// Manier 1: ListIterator
 		// Manier 2: Lambda
-		// Manier 3: Reference method
-		// list.replaceAll(String::toUpperCase);
+		// Manier 3: Reference method -> list.replaceAll(String::toUpperCase);
 
 		list.replaceAll(e -> e.toUpperCase());
 
@@ -63,7 +62,7 @@ public class KleineOefeningenList_Opgave {
 
 		list.replaceAll(w -> w.toLowerCase());
 		return list;
-		
+
 	}
 
 	public static void main(String args[]) {
