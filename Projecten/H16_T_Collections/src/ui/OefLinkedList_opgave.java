@@ -32,8 +32,12 @@ public class OefLinkedList_opgave {
 
 	public void metEenVerhogen(List<Integer> lijst) // ------------
 	{
-		// Alle elementen van de lijst met 1 verhogen (wijzigen).
-		// JAVA 7:
+		/*
+		 * Alle elementen in de meegegeven lijst met 1 verhogen.
+		 * 
+		 *  Manier 1: ListIterator
+		 *  Manier 2: Lambda
+		 */
 		
 		// ListIterator<Integer> it = lijst.listIterator();
 		//
@@ -47,9 +51,10 @@ public class OefLinkedList_opgave {
 	}
 
 	public List<Integer> metEenVerhogen_java8(List<Integer> lijst) {
-		// Elementen worden met één verhoogd en lijst wordt teruggegeven.
-
-		// JAVA 8:
+		
+		/*
+		 * Zelfde als vorige methode maar in Java 8.
+		 */
 		return lijst.stream().map(e -> e + 1).collect(Collectors.toList());
 	}
 
