@@ -6,6 +6,7 @@
     - Slides H16: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_2TIN_stud.pdf).
     - Verkorte weergave Collecties: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/VerkorteWeergaveCollecties.pdf).
     - Herhaling Comparable: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_ExtraComparable.pdf).
+    - Overzicht/Samenvatting: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/Overzicht_Samenvatting.md).
  - Slides Oefeningen:
     - Oefeningen: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Oefeningen/Oefeningenreeks_H16.pdf).
 
