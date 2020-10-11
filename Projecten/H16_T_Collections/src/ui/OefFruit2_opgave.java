@@ -18,7 +18,6 @@ class CollectionOperaties {
 		 * verwijdert ui de collection.
 		 * 
 		 */
-
 		// Implementatie in JAVA 7:
 		Iterator<String> it = collection.iterator();
 
@@ -41,7 +40,6 @@ class CollectionOperaties {
 		 * Alles wat tussen het eerste en het laatste woord staat wordt verwijdert.
 		 * 
 		 */
-
 		int indexStart = list.indexOf(limit);
 		int indexEinde = list.lastIndexOf(limit);
 
@@ -52,7 +50,7 @@ class CollectionOperaties {
 	}
 
 	public static void addOrder(List<String> list, String keyFruitSoort) {
-
+		
 		/*
 		 * Zoek door middel van binarySearch of de fruitsoort als is toegevoegd aan de
 		 * list. Indien de binarySearch een negatieve waarde teruggeeft zit de
@@ -63,7 +61,6 @@ class CollectionOperaties {
 		 * In deze opdracht indien de fruitsoort er nog niet inzit dan wordt ze
 		 * toegevoegd aan de list.
 		 */
-
 		int index = Collections.binarySearch(list, keyFruitSoort);
 
 		if (index < 0)
@@ -82,13 +79,13 @@ class CollectionOperaties {
 public class OefFruit2_opgave {
 
 	public static void main(String args[]) {
+		
 		/*
 		 * kist: Maakt een 2D array aan met fruitsoorten. list: Maakt een lege
 		 * dynamische lijst aan.
 		 * 
 		 * Print: 2D array met deepToString() -> Static methode van de klasse Arrays.
 		 */
-
 		String kist[][] = { { "appel", "peer", "citroen", "kiwi", "perzik" },
 				{ "banaan", "mango", "citroen", "kiwi", "zespri", "pruim" },
 				{ "peche", "lichi", "kriek", "kers", "papaya" } };
@@ -108,7 +105,6 @@ public class OefFruit2_opgave {
 		 * Java 8 standaarden. (Overlopen d.m.v. stream pipeline).
 		 * 
 		 */
-
 		// Manier 1
 		for (String[] eenKist : kist)
 			list.addAll(Arrays.asList(eenKist));
