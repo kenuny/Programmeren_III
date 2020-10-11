@@ -34,15 +34,16 @@ public class OefLinkedList_opgave {
 	{
 		// Alle elementen van de lijst met 1 verhogen (wijzigen).
 		// JAVA 7:
-		ListIterator<Integer> it = lijst.listIterator();
-
-		while (it.hasNext()) {
-			int getal = it.next();
-			it.set(getal + 1);
-		}
+		
+		// ListIterator<Integer> it = lijst.listIterator();
+		//
+		// while (it.hasNext()) {
+		//	int getal = it.next();
+		//	it.set(getal + 1);
+		// }
 
 		// JAVA 8:
-		// lijst.replaceAll(g -> g+1);
+		lijst.replaceAll(g -> g+1);
 	}
 
 	public List<Integer> metEenVerhogen_java8(List<Integer> lijst) {
@@ -67,8 +68,7 @@ public class OefLinkedList_opgave {
 
 	// generieke methode:
 	public <E> void weergevenLijstOmgekeerdeVolgorde(String oplossing, List<E> lijst) {
-		// Alle elementen van de List<Integer> in omgekeerde volgorde weergeven
-		// --------------------------------------------------------------------------------------
+
 		System.out.printf("%s%n%s", oplossing, "           ");
 		// JAVA 7:
 		ListIterator<E> it = lijst.listIterator(lijst.size()); // plaatst pointer op einde.
@@ -80,7 +80,7 @@ public class OefLinkedList_opgave {
 		System.out.println("java 8 lijst omgekeerde volgorde: ");
 		System.out.printf("%s%n%s", oplossing, "           ");
 
-		// TODO: JAVA8:
+		// JAVA8:
 		new LinkedList<>(lijst).descendingIterator().forEachRemaining(e -> System.out.printf("%s", e));
 
 		System.out.println();
