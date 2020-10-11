@@ -12,6 +12,12 @@ public class StudentApplicatieSet
 {
     public static void main(String[] args)
     {
+    	
+    	/*
+    	 * lijst opgevuld met Student objecten.
+    	 *   lijst -> HashSet
+    	 *   Lijst -> TreeSet 
+    	 */
         List<Student> lijstStudenten = new ArrayList<>();
         
         lijstStudenten.add(new Student(20132566,"Janssens","Wendy","Eke"));
@@ -27,12 +33,11 @@ public class StudentApplicatieSet
         
 
 		Set<Student> set1 = new HashSet<>(lijstStudenten);
-		System.out.println(set1);
+		System.out.println("Lijst studenten via HashSet" + set1 + "\n");
 		
 		
-		// geen foutmelding
 		Set<Student> set2 = new TreeSet<>(set1);
-		System.out.println(set2);
+		System.out.println("Lijst studenten via TreeSet" + set2 + "\n");
        
     }
 }
