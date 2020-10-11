@@ -3,9 +3,9 @@ package ui;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
-public class InleidingDoorlopenCollectie_start
-{
+public class InleidingDoorlopenCollectie_start {
 	public static void main(String[] args) {
 		List<String> woorden = new ArrayList<>();
 		woorden.add("Eerste");
@@ -15,50 +15,65 @@ public class InleidingDoorlopenCollectie_start
 		woorden.add("Tweede");
 		woorden.add("Derde");
 		woorden.add("\n");
-		
-		
-		// array = .length
-		// lijst = .size
+
+		/*
+		 * Verschillende manieren om een collectie te doorlopen
+		 * 
+		 * Manier 1: for-lus 
+		 * Manier 2: enhanced-for : maakt gebruik van iterator 
+		 * Manier 3: iterator : exact hetzelfde als een enhanced-for 
+		 * Manier 4: ListIterator
+		 * Manier 5: Lambda
+		 * Manier 6: Reference method
+		 * 
+		 * Enhanced for : kan objecten lezen en werkt niet-geïndexeerd. 
+		 * Iterator		: kan objecten lezen en verwijderen en werkt niet-geïndexeerd. 
+		 * ListIterator : kan lijsten lezen, verwijderen en aanpassen en werkt geïndexeerd.
+		 * 			
+		 */
+
+		// Manier 1:
+		System.out.println("Manier 1: For-lus");
+		System.out.println("-----------------");
 		
 		for (int i = 0; i < woorden.size(); i++)
 			System.out.println(woorden.get(i));
-		
-		// Efficiënter dan standard forlus omdat hier een iterable wordt geïmplementeerd. 
-		for (String elem : woorden) 
+
+		// Manier 2:
+		System.out.println("Manier 2: Enhanced-for");
+		System.out.println("----------------------");
+		for (String elem : woorden)
 			System.out.println(elem);
 		
-		// Onderstaande is hetzelfde als enhanced for.
-		// plaatst een pointer net voor het eerste element. 
+		// Manier 3:
+		System.out.println("Manier 3: Iterator");
+		System.out.println("------------------");
 		Iterator<String> it = woorden.iterator();
-		
-		while(it.hasNext())
+
+		while (it.hasNext())
 			System.out.println(it.next());
 		
+		// Manier 4:
+		System.out.println("Manier 4: ListIterator + index(5)");
+		System.out.println("---------------------------------");
+		ListIterator<String> lijstIterator = woorden.listIterator();
+		ListIterator<String> lijstIteratorIndex = woorden.listIterator(5);
+		System.out.println("Indexing: " + lijstIteratorIndex.next() + "\n"); // geïndexeerde toegang
 		
-		// enhanced for kan enkel lezen Onderstaande code compileert een fout
-//		for (String elem : woorden)
-//			if (elem.equals(elem))
-//				woorden.remove(elem);
-		
-		// oplossing op bovenstaande fout
-		while(it.hasNext()) {
-			String s = it.next();
-			if (s.equals("Derde"))
-				it.remove();
+		while (lijstIterator.hasNext()) {
+			String woord = lijstIterator.next();
+			System.out.println(woord);
 		}
 		
-		// Overlopen --gebruik--> enhanced for
-		// overlopen en verwijderen --gebruik--> Iterator (bij alles)
-		// Overlopen + positie bepalen + toevoegen en verwijderen --gebruik--> ListIterator (enkel bij lijsten)
-		
-			
-		// lamba's
-		System.out.println("lambda's \n\n");
-		
+		// Manier 5:
+		System.out.println("Manier 5: Lambda");
+		System.out.println("----------------");
 		woorden.forEach(elem -> System.out.println(elem));
+		
+		// Manier 6:
+		System.out.println("Manier 6: Method reference");
+		System.out.println("--------------------------");
 		woorden.forEach(System.out::println);
 		
-		// linked list geschikt toevoegen en verwijderen.
-		// arraylist is goed om elementen op te zoeken.
 	}
 }
