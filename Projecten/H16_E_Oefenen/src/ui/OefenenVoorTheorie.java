@@ -3,6 +3,7 @@ package ui;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class OefenenVoorTheorie {
@@ -11,25 +12,23 @@ public class OefenenVoorTheorie {
 
 
 		String[] kleuren = { "wit", "blauw", "groen", "rood", "geel" };
-		String[] specialeKleuren = { "zwart", "blauw", "purper", "chilirood", "geel" };
+//		String[] specialeKleuren = { "zwart", "blauw", "purper", "chilirood", "geel" };
+//		
+//		List<String> kleurenlijst = new ArrayList<>(Arrays.asList(kleuren));
+//		List<String> specialeKleurenLijst = new ArrayList<>(Arrays.asList(specialeKleuren));
+//
+//		
+//		
+//		System.out.println(kleurenlijst);
+
+		LinkedList<String> ll = new LinkedList<>( Arrays.asList(kleuren));
+		
+		LinkedList<String> llCopy = new LinkedList<>();
+		
+		llCopy = (LinkedList) ll.clone();
 	
-		List<String> kleurenlijst = new ArrayList<>(Arrays.asList(kleuren));
-		List<String> specialeKleurenLijst = new ArrayList<>(Arrays.asList(specialeKleuren));
-
-		System.out.println(specialeKleurenLijst);
-		Collections.addAll(specialeKleurenLijst, kleuren);
-		System.out.println(specialeKleurenLijst);
 		
-		int x = Collections.frequency(specialeKleurenLijst, "blauw");
-		System.out.println(x);
-		
-		boolean a = Collections.disjoint(specialeKleurenLijst, kleurenlijst);
-		System.out.println(a);
-		System.out.println(specialeKleurenLijst);
-
-
-		
-		
+		System.out.println(llCopy + "a");
 		
 	}
 }

@@ -12,8 +12,8 @@ public class Deitel_Set_729 {
 
 		/*
 		 * Set: is een collection van unieke elementen? (m.a.w. verwijdert duplicaten).
-		 * - HashSet: sorteert elementen ongeordend in een hash table. 
-		 * - TreeSet: sorteert elementen geordend in een tree table.
+		 * - HashSet: sorteert elementen ongeordend in een hash table. - TreeSet:
+		 * sorteert elementen geordend in een tree table.
 		 */
 
 		String[] colors = { "red", "white", "blue", "green", "gray", "orange", "tan", "white", "cyan", "peach", "gray",
@@ -23,11 +23,11 @@ public class Deitel_Set_729 {
 
 		// Voorbeeld van HashSet().
 		Set<String> set_hash = new HashSet<>(list);
-		System.out.println("List of colors with set:    " + set_hash + ".\n");
+		System.out.println("List of colors with HashSet:    " + set_hash + ".\n");
 
 		// Voorbeeld van TreeSet().
 		Set<String> set_tree = new TreeSet<>(list);
-		System.out.println("List of colors with set:    " + set_tree + ".\n");
+		System.out.println("List of colors with TreeSet:    " + set_tree + ".\n");
 
 	}
 
