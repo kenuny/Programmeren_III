@@ -41,6 +41,6 @@ public class Deitel_SortingList_717 {
 
 		Collections.sort(lijst2, Collections.reverseOrder());
 		System.out.printf("%nGesorteerde lijst: %s%n", lijst2);
-
+		
 	}
 }
