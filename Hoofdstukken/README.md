@@ -2,29 +2,20 @@
 
 **Hoofdstuk 16:** Collection framework
 
- - Slides Theorie: 
-    - Slides H16: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_2TIN_stud.pdf).
-    - Verkorte weergave Collecties: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/VerkorteWeergaveCollecties.pdf).
-    - Herhaling Comparable: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_ExtraComparable.pdf).
-    - Overzicht/Samenvatting: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/Overzicht_Samenvatting.md).
- - Slides Oefeningen:
-    - Oefeningen: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Oefeningen/Oefeningenreeks_H16.pdf).
+| Hoofdstuk | Bestandsnaam                                 |                             link                             | Done |
+| --------- | -------------------------------------------- | :----------------------------------------------------------: | :--: |
+| 16 - T    | Slides: Hoofdstuk 16                         | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/Overzicht_Samenvatting.md) |  x   |
+| 16 - T    | Slides: Hierarchy Collection Framework (pdf) | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/VerkorteWeergaveCollecties.pdf) |  x   |
+| 16 - T    | Slides: Extra uitleg over Comparable         | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/SlidesH16_ExtraComparable.pdf) |      |
+| 16 - T    | Samenvatting: overzicht methodes             | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/Overzicht_Samenvatting.md) |  x   |
+|           |                                              |                                                              |      |
+| 16 - O    | Theorie start oefening                       | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_T_Start) |  x   |
+| 16 - O    | Kleine oefeningen op collections             | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_T_Collections) |  x   |
+| 16 - O    | Oefening garage                              | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_O_Garage) |      |
+| 16 - O    | Extra oefeningen ( oefenproject )            | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_E_Oefenen) |  x   |
+|           |                                              |                                                              |      |
+|           |                                              |                                                              |      |
+|           |                                              |                                                              |      |
 
 <br>
 
-**Hoofdstuk 17:** Lambda's en streams
-
- - Slides Theorie: 
-    - Slides H17: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Slides_H17_LambdasEnStreams.pdf).
-    - Aanvulling: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Lambdas_AanvullingBijSlides.pdf).
-- Slides Oefeningen:
-  - Oefeningen: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Oefeningen/OOPIII_Oefening_H17_2021.pdf).
-
-<br>
-
-**Hoofdstuk 20:** Generiek programmeren
-
- - Slides Theorie: 
-    - Slides H20: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_20/Theorie/SlidesH20_GeneriekeMethodenEnKlassen.pdf).
-- Slides oefeningen:
-  - Oefeningen H20: [link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_20/Oefeningen/Oefeningenreeks_H20.pdf).
