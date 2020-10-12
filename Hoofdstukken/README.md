@@ -13,9 +13,6 @@
 | 16 - O    | Kleine oefeningen op collections             | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_T_Collections) |  x   |
 | 16 - O    | Oefening garage                              | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_O_Garage) |      |
 | 16 - O    | Extra oefeningen ( oefenproject )            | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_E_Oefenen) |  x   |
-|           |                                              |                                                              |      |
-|           |                                              |                                                              |      |
-|           |                                              |                                                              |      |
 
 <br>
 
