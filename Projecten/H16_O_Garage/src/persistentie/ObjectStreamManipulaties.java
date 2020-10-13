@@ -27,7 +27,7 @@ public class ObjectStreamManipulaties {
 	}
 
 	// Maak methode generiek
-	public  <E> List<E> leesObjecten(File naamBestand) {
+	public <E> List<E> leesObjecten(File naamBestand) {
     	List<E> li = new ArrayList<>();
     	
     	try(ObjectInputStream ois = new ObjectInputStream(
@@ -37,10 +37,11 @@ public class ObjectStreamManipulaties {
     		}
     	} catch( EOFException e) {
     		return li;
-    	} catch ( IOException | ClassNotFoundException ex) {
-    		Logger.getLogger(ObjectStreamManipulaties.class.getName())log(Level.SEVERE, null, ex);
-    	}
+    	} catch (IOException | ClassNotFoundException ex) {
+			Logger.getLogger(ObjectStreamManipulaties.class.getName()).log(Level.SEVERE, null, ex);
+		}
         
+    	return null;
        
     }
 
