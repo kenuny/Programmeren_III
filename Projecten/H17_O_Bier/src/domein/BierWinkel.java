@@ -42,7 +42,7 @@ public class BierWinkel {
 //	public double geefBierMetHoogsteAlcoholPercentage() {
 //		return bieren.stream().mapToDouble(Bier::getAlcoholgehalte).max().getAsDouble();
 //	}
-	
+
 	public Bier geefBierMetHoogsteAlcoholPercentage() {
 		return bieren.stream().max(Comparator.comparing(Bier::getAlcoholgehalte)).get();
 	}
@@ -71,30 +71,26 @@ public class BierWinkel {
 
 	// Alle brouwerijen
 	public List<String> geefAlleNamenBrouwerijen() {
-		// Brouwerijen kunnen meerdere keren voorkomen -> distinct om de duplicaten eruit te halen.
-		return bieren.stream()
-					 .map(Bier::getBrouwerij)
-					 .distinct()
-					 .collect(Collectors.toList());
+		// Brouwerijen kunnen meerdere keren voorkomen -> distinct om de duplicaten
+		// eruit te halen.
+		return bieren.stream().map(Bier::getBrouwerij).distinct().collect(Collectors.toList());
 	}
 
 	// Alle brouwerijen die het woord "van" bevatten
 	public List<String> geefAlleNamenBrouwerijenMetWoord(String woord) {
-		return bieren.stream()
-					 .filter(bier -> bier.getBrouwerij().contains(woord))
-					 .map(Bier::getBrouwerij)
-					 .distinct()
-					 .collect(Collectors.toList());
+		return bieren.stream().filter(bier -> bier.getBrouwerij().contains(woord)).map(Bier::getBrouwerij).distinct()
+				.collect(Collectors.toList());
 	}
 
 	public Map<String, List<Bier>> opzettenOverzichtBierenPerSoort() {
 		/* Overzich per soort (vb: blond, donker, onbekend, geuze, tripel. */
 		/* Beiden geven het zelfde resultaat. */
-		
-		// HashMap - niet gesorteerd - 
-		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort, Collectors.toList()));
+
+		// HashMap - niet gesorteerd -
+		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort,
+		// Collectors.toList()));
 		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort));
-		
+
 		// TreeMap - gesorteerd -
 		return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort, TreeMap::new, Collectors.toList()));
 
@@ -102,13 +98,14 @@ public class BierWinkel {
 
 	public Map<String, Long> opzettenAantalBierenPerSoort() {
 		/* Tellen hoeveel bieren er zijn per soort. */
-		
+
 		// HashMap of TreeMap maakt niet uit
 		// HashMap:
 		return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort, TreeMap::new, Collectors.counting()));
-		
+
 		// TreeMap
-		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort, Collectors.counting()));
+		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort,
+		// Collectors.counting()));
 
 	}
 
