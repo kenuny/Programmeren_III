@@ -2,76 +2,74 @@ package domein;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class DomeinController
-{
-    private BierWinkel bierWinkel;
+public class DomeinController {
+	private BierWinkel bierWinkel;
 
-    public DomeinController()
+	public DomeinController() {
+		bierWinkel = new BierWinkel();
+	}
+
+	public long geefAantalBierenMetMinAlcoholPercentage(double percentage) {
+		return bierWinkel.geefAantalBierenMetMinAlcoholPercentage(percentage);
+	}
+
+	public List<String> geefLijstAlleBierenMetMinAlcoholPercentage(double percentage)
     {
-        bierWinkel = new BierWinkel();
-    }
-  
-    public long geefAantalBierenMetMinAlcoholPercentage(double percentage)
-    {
-    	return bierWinkel.geefAantalBierenMetMinAlcoholPercentage(percentage);
-    }
-    
-    public List<String> geefLijstAlleBierenMetMinAlcoholPercentage(double percentage)
-    {
-    	return null;
-    }
-    
-    public List<String> geefAlleBieren()
-    {
-        return null;
-    }
-    
-    public String geefNamenBieren()
-    {
-        return null;
-    }
-    
-    public String geefBierMetHoogsteAlcoholPercentage()
-    {
-        return null;
-    }
-    
-    public String geefBierMetLaagsteAlcoholPercentage()
-    {
-        return null;
-    }
-    
-    public List<String> geefGeordendOpAlcoholGehalteEnNaam()
-    {
-       return null;
-    }
-    
-    public String geefAlleNamenBrouwerijen()
-    {
-        return null;
-    }
-    
-    public String geefAlleNamenBrouwerijenMetWoord(String woord)
-    {
-        return null;
+    	
+    	List<Bier> bieren = bierWinkel.geefAlleBierenMetMinAlcoholPercentage(percentage);
+    	
+    	// lambda method
+    	return bieren.stream().map(bier -> bier.toString()).collect(Collectors.toList());
+    	
+    	// method reference
+    	// return bieren.stream().map(Bier::toString).collect(Collectors.toList());
     }
 
-    public String opzettenAantalBierenPerSoort()
-    {   //naar BierWinkel --> map<String, Long>
-        return null;
-    }
+	public List<String> geefAlleBieren() {
+		return bierWinkel.getBieren().stream().map(Bier::toString).collect(Collectors.toList());
+	}
 
-    public String opzettenOverzichtBierenPerSoort()
-    {  // naar BierWinkel --> map<String, List<Bier>>
-        return null;
-    }
+	public String geefNamenBieren() {
+		// Werkt via een StringBuilder
+		return bierWinkel.geefNamenBieren().stream().collect(Collectors.joining("\n"));
+	}
 
-    /*
-    private       String overzichtToString(Map<    > map)
-    {  //hulp voor map --> String
-         return null;
-    }
-    */
+	public String geefBierMetHoogsteAlcoholPercentage() {
+		return bierWinkel.geefBierMetHoogsteAlcoholPercentage().toString();
+	}
+
+	public String geefBierMetLaagsteAlcoholPercentage() {
+		return bierWinkel.geefBierMetLaagsteAlcoholPercentage().toString();
+	}
+
+	public List<String> geefGeordendOpAlcoholGehalteEnNaam() {
+		List<Bier> bieren = bierWinkel.geefGeordendOpAlcoholGehalteEnNaam();
+		
+		return bieren.stream().map(Bier::toString).collect(Collectors.toList());
+	}
+
+	public String geefAlleNamenBrouwerijen() {
+		return bierWinkel.geefAlleNamenBrouwerijen().stream().collect(Collectors.joining("\n"));
+	}
+
+	public String geefAlleNamenBrouwerijenMetWoord(String woord) {
+		return bierWinkel.geefAlleNamenBrouwerijenMetWoord(woord).stream().collect(Collectors.joining("\n"));
+	}
+
+	public String opzettenAantalBierenPerSoort() { // naar BierWinkel --> map<String, Long>
+		return null;
+	}
+
+	public String opzettenOverzichtBierenPerSoort() { // naar BierWinkel --> map<String, List<Bier>>
+		return null;
+	}
+
+	/*
+	 * private String overzichtToString(Map< > map) { //hulp voor map --> String
+	 * return null; }
+	 */
 
 }

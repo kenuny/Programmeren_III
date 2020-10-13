@@ -22,7 +22,7 @@ public class BierApplicatie
         System.out.println("======================================================");
         System.out.println("Bereken het aantal bieren die minstens 8 graden hebben");
 
-        System.out.println("Aantal bieren van minstens 8 graden:" 
+        System.out.println("Aantal bieren van minstens 8 graden: " 
                 + domeinController.geefAantalBierenMetMinAlcoholPercentage(8));
 
         //Maak een lijst met alle bieren van minstens 8 graden
