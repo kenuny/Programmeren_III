@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -106,7 +107,13 @@ public class BierWinkel {
 		// TreeMap
 		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort,
 		// Collectors.counting()));
-
+	}
+	
+	public Map<String, Bier> opzettenOverzichtBierPerNaam(){
+		
+		// d.m.v. HashMap
+		return bieren.stream()
+					 .collect(Collectors.toMap(Bier::getNaam, Function.identity()));
 	}
 
 }
