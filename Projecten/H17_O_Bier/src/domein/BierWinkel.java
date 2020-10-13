@@ -108,12 +108,11 @@ public class BierWinkel {
 		// return bieren.stream().collect(Collectors.groupingBy(Bier::getSoort,
 		// Collectors.counting()));
 	}
-	
-	public Map<String, Bier> opzettenOverzichtBierPerNaam(){
-		
+
+	public Map<String, Bier> opzettenOverzichtBierPerNaam() {
+
 		// d.m.v. HashMap
-		return bieren.stream()
-					 .collect(Collectors.toMap(Bier::getNaam, Function.identity()));
+		return bieren.stream().collect(Collectors.toMap(Bier::getNaam, Function.identity()));
 	}
 
 }

@@ -25,7 +25,7 @@ public class BierMapper {
 			});
 		} catch (IOException e) {
 			System.out.println("error opgelopen");
-			
+
 		}
 
 		return bieren;

@@ -57,7 +57,7 @@ public class DomeinController {
 	public String geefAlleNamenBrouwerijenMetWoord(String woord) {
 		return bierWinkel.geefAlleNamenBrouwerijenMetWoord(woord).stream().collect(Collectors.joining("\n"));
 	}
-	
+
 	public String opzettenAantalBierenPerSoort() { // naar BierWinkel --> map<String, Long>
 		return overzichtToString(bierWinkel.opzettenAantalBierenPerSoort());
 	}
@@ -68,8 +68,7 @@ public class DomeinController {
 
 	// typeparametersectie <K, V> komt steeds voor de retourwaarde.
 	private <K, V> String overzichtToString(Map<K, V> map) { // hulp voor map --> String
-		return map.entrySet().stream()
-							 .map(element -> String.format("%s: %s", element.getKey(), element.getValue()))
-							 .collect(Collectors.joining("\n"));
+		return map.entrySet().stream().map(element -> String.format("%s: %s", element.getKey(), element.getValue()))
+				.collect(Collectors.joining("\n"));
 	}
 }

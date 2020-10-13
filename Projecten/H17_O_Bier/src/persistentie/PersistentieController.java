@@ -5,13 +5,13 @@ import java.util.List;
 
 public class PersistentieController {
 
-    private BierMapper bierMapper;
+	private BierMapper bierMapper;
 
-    public List<Bier> inlezenBieren(String naamBestand) {
-        if (bierMapper == null) {
-            bierMapper = new BierMapper();
-        }
-        return bierMapper.inlezenBieren(naamBestand);
-    }
+	public List<Bier> inlezenBieren(String naamBestand) {
+		if (bierMapper == null) {
+			bierMapper = new BierMapper();
+		}
+		return bierMapper.inlezenBieren(naamBestand);
+	}
 
 }
