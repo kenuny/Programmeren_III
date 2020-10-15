@@ -24,7 +24,7 @@
 | 17 - S    | Theorie: Hoofdstuk 17                            | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Slides_H17_LambdasEnStreams.pdf) |  L   |
 | 17 - S    | Theorie: Aanvulling Hoofdstuk 17                 | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Lambdas_AanvullingBijSlides.pdf) |  L   |
 | 17 - S    | Oefeningen: Opgave oefeningen H17                | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Oefeningen/OOPIII_Oefening_H17_2021.pdf) |  L   |
-| 17 - S    | Overzicht Hoofdstuk 17                           |                                                              |      |
+| 17 - S    | Overzicht Hoofdstuk 17                           | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_17/Theorie/Overzicht_Samenvatting_H17.md) |      |
 |           |                                                  |                                                              |      |
 | H17 - P   | Voorbeelden Deitel Hoofdstuk 17                  | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H17_T_VoorbeeldenDeitel) |  L   |
 | H17 - P   | Extra voorbeelden Hoofdstuk 17                   | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H17_T_ExtraVoorbeelden) |  L   |
