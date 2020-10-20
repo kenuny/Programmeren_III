@@ -1,9 +1,0 @@
-package ui;
-
-public class Deitel_BinarySearch_724 {
-
-	public static void main(String[] args) {
-		String[] colors = { "red", "white", "blue", "black", "yellow", "purple", "tan", "pink" };
-	}
-
-}
