@@ -42,16 +42,16 @@ public class InleidingDoorlopenCollectie_start {
 //		}
 //		for(String s : woorden)
 //        	System.out.println(s);
-		
+
 		ListIterator<String> iterator = woorden.listIterator();
 		while (iterator.hasNext()) {
 			String woord = iterator.next();
-			if(woord.equals("Tweede"))
+			if (woord.equals("Tweede"))
 				iterator.add("Derde");
 		}
-		for(String s : woorden)
-        	System.out.println(s);
-		
+		for (String s : woorden)
+			System.out.println(s);
+
 		ListIterator<String> iterator2 = woorden.listIterator(woorden.size());
 		while (iterator2.hasPrevious()) {
 			String woord = iterator2.previous();

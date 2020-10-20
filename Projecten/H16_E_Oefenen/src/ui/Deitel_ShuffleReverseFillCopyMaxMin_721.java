@@ -58,35 +58,35 @@ public class Deitel_ShuffleReverseFillCopyMaxMin_721 {
 		/*
 		 * Maximum en minimum referentie.
 		 * 
-		 * Bij Strings
-		 *  - Minimum retourneert de eerste waarde op alfabet. (aa bb cc --> retourneert aa) (bb aa cc --> retourneert aa). 
-		 *  - Maximum retourneert de laatste waarde op alfabet. (aa bb cc --> retourneert cc) (bb aa cc --> retourneert cc).
-		 *  
-		 * Bij integers / doubles / ...
-		 * 	- Minimum retourneert de kleinste waarde. (0.5 0.8 1.1 --> retourneert 0.5) (1.1 0.5 0.8 --> retourneert 0.5).
-		 * 	- Maximum retourneert de grootste waarde. (0.5 0.8 1.1 --> retourneert 1.1) (1.1 0.5 0.8 --> retourneert 1.1).
+		 * Bij Strings - Minimum retourneert de eerste waarde op alfabet. (aa bb cc -->
+		 * retourneert aa) (bb aa cc --> retourneert aa). - Maximum retourneert de
+		 * laatste waarde op alfabet. (aa bb cc --> retourneert cc) (bb aa cc -->
+		 * retourneert cc).
+		 * 
+		 * Bij integers / doubles / ... - Minimum retourneert de kleinste waarde. (0.5
+		 * 0.8 1.1 --> retourneert 0.5) (1.1 0.5 0.8 --> retourneert 0.5). - Maximum
+		 * retourneert de grootste waarde. (0.5 0.8 1.1 --> retourneert 1.1) (1.1 0.5
+		 * 0.8 --> retourneert 1.1).
 		 */
-		
+
 		String minimumString = Collections.min(kleurenlijst); // retourneert kleinste of eerste (bij String).
 		String maximumString = Collections.max(kleurenlijst); // retourneer
 		Collections.sort(kleurenlijst);
-		System.out.printf("%nMiniumum: %s%nMinimum: %s.%nGesorteerd: %s%n%n", minimumString, maximumString, kleurenlijst);
-		
-		int[] getallen = {1, 9, 2, 7, 6, 3, 5, 4};
+		System.out.printf("%nMiniumum: %s%nMinimum: %s.%nGesorteerd: %s%n%n", minimumString, maximumString,
+				kleurenlijst);
+
+		int[] getallen = { 1, 9, 2, 7, 6, 3, 5, 4 };
 		List<Integer> lijstIntegere = new ArrayList<>();
-		
+
 		for (int getal : getallen) {
 			lijstIntegere.add(getal);
 		}
-		
+
 		System.out.println(lijstIntegere);
-		
+
 		int miniumInt = Collections.min(lijstIntegere);
 		int maximumInt = Collections.max(lijstIntegere);
 		System.out.printf("%nMiniumum: %d%nMinimum: %d%n%n", miniumInt, maximumInt);
-		
-
-		
 
 	}
 

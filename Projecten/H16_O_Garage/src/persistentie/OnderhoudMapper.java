@@ -7,14 +7,14 @@ import java.io.File;
 
 public class OnderhoudMapper {
 
-    private File naamBestand;
+	private File naamBestand;
 
-    public OnderhoudMapper(File naamBestand) {
-        this.naamBestand = naamBestand;
-    }
-    
-    public List<Onderhoud> geefOnderhoudVanAutos() {
- 	return new ObjectStreamManipulaties().leesObjecten(naamBestand);
-    }
+	public OnderhoudMapper(File naamBestand) {
+		this.naamBestand = naamBestand;
+	}
+
+	public List<Onderhoud> geefOnderhoudVanAutos() {
+		return new ObjectStreamManipulaties().leesObjecten(naamBestand);
+	}
 
 }

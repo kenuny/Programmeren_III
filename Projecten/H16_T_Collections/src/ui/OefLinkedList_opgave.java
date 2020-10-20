@@ -35,23 +35,22 @@ public class OefLinkedList_opgave {
 		/*
 		 * Alle elementen in de meegegeven lijst met 1 verhogen.
 		 * 
-		 *  Manier 1: ListIterator
-		 *  Manier 2: Lambda
+		 * Manier 1: ListIterator Manier 2: Lambda
 		 */
-		
+
 		// ListIterator<Integer> it = lijst.listIterator();
 		//
 		// while (it.hasNext()) {
-		//	int getal = it.next();
-		//	it.set(getal + 1);
+		// int getal = it.next();
+		// it.set(getal + 1);
 		// }
 
 		// JAVA 8:
-		lijst.replaceAll(g -> g+1);
+		lijst.replaceAll(g -> g + 1);
 	}
 
 	public List<Integer> metEenVerhogen_java8(List<Integer> lijst) {
-		
+
 		/*
 		 * Zelfde als vorige methode maar in Java 8.
 		 */

@@ -7,14 +7,14 @@ import java.io.File;
 
 public class AutoMapper {
 
-    private File naamBestand;
+	private File naamBestand;
 
-    public AutoMapper(File naamBestand) {
-        this.naamBestand = naamBestand;
-    }
-    
-    public List<Auto> geefAutos() {
-    	return new ObjectStreamManipulaties().leesObject(naamBestand);
-    }
+	public AutoMapper(File naamBestand) {
+		this.naamBestand = naamBestand;
+	}
+
+	public List<Auto> geefAutos() {
+		return new ObjectStreamManipulaties().leesObject(naamBestand);
+	}
 
 }

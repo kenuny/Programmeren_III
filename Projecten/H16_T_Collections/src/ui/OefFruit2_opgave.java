@@ -50,7 +50,7 @@ class CollectionOperaties {
 	}
 
 	public static void addOrder(List<String> list, String keyFruitSoort) {
-		
+
 		/*
 		 * Zoek door middel van binarySearch of de fruitsoort als is toegevoegd aan de
 		 * list. Indien de binarySearch een negatieve waarde teruggeeft zit de
@@ -79,7 +79,7 @@ class CollectionOperaties {
 public class OefFruit2_opgave {
 
 	public static void main(String args[]) {
-		
+
 		/*
 		 * kist: Maakt een 2D array aan met fruitsoorten. list: Maakt een lege
 		 * dynamische lijst aan.
@@ -140,7 +140,7 @@ public class OefFruit2_opgave {
 		 * begint met de opgegeven letter. verwijderSequence(lijst, woord) -> Verwijdert
 		 * elk object in de list dat zich tussen het eerste en laatste woord bevindt.
 		 */
-		
+
 		CollectionOperaties.verwijderOpLetter(list, 'p');
 		System.out.println("na verwijder letter ('p'):  ");
 		System.out.println(list);
@@ -155,7 +155,7 @@ public class OefFruit2_opgave {
 		 * Plaatst de huidige list na bewerking van kiwi sequence in een array en
 		 * sorteert deze array oplopen.
 		 */
-		
+
 		mand = list.toArray(new String[list.size()]);
 		Arrays.sort(mand);
 

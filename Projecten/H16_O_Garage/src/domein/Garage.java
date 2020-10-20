@@ -136,7 +136,7 @@ public class Garage {
 		}
 		return 0;
 	}
-	
+
 	// Java 14 (werkt niet)
 //	private int sizeToCategorie(int size) {
 //		return switch(size) {
@@ -155,7 +155,7 @@ public class Garage {
 
 //				return autoOnderhoudMap.entrySet().stream().collect(Collectors.groupingBy(entry -> sizeToCategorie(entry.getValue().size()), TreeMap::new, 
 //						Collectors.mapping(entry -> autoMap.get(entry.getKey()), Collectors.toSet())));
-		
+
 //		return autoOnderhoudMap.entrySet()
 //							   .stream()
 //							   .collect(Collectors.groupingBy(entry -> sizeToCategorie(entry.get)) //
@@ -164,26 +164,19 @@ public class Garage {
 
 //Oefening DomeinController:
 	public String autoMap_ToString() {
-		String result = autoMap.values()
-							   .stream()
-							   .sorted(Comparator.comparing(Auto::getNummerplaat))
-							   .map(Auto::toString)
-							   .collect(Collectors.joining("\n"));
+		String result = autoMap.values().stream().sorted(Comparator.comparing(Auto::getNummerplaat)).map(Auto::toString)
+				.collect(Collectors.joining("\n"));
 		return result;
 	}
 
 	public String autoOnderhoudMap_ToString() {
-		String result = autoOnderhoudMap.entrySet()
-									 .stream()
-									 .sorted(Map.Entry.comparingByKey())
-									 .map(e -> String.format("%s:%n%s", e.getKey(), e.getValue()
-											 										 .stream()
-											 										 .map(Onderhoud::toString)
-											 										 .collect(Collectors.joining("\n"))))
-									 .collect(Collectors.joining("\n"));
-		
+		String result = autoOnderhoudMap.entrySet().stream().sorted(Map.Entry.comparingByKey())
+				.map(e -> String.format("%s:%n%s", e.getKey(),
+						e.getValue().stream().map(Onderhoud::toString).collect(Collectors.joining("\n"))))
+				.collect(Collectors.joining("\n"));
+
 		return result;
-		
+
 //		// Tweede manier:
 //		 String res = autoOnderhoudMap.entrySet()
 //		 .stream()
@@ -193,10 +186,9 @@ public class Garage {
 	public String overzicht_ToString() {
 		overzichtteller = 1;
 		String result = overzichtLijstVanAutos.stream()
-											  .map(setAuto -> String.format("%d%n%s", overzichtteller++, setAuto.stream()
-													  															.map(Auto::toString)
-													  															.collect(Collectors.joining("\n"))))
-											  .collect(Collectors.joining("\n"));
+				.map(setAuto -> String.format("%d%n%s", overzichtteller++,
+						setAuto.stream().map(Auto::toString).collect(Collectors.joining("\n"))))
+				.collect(Collectors.joining("\n"));
 		return result;
 	}
 

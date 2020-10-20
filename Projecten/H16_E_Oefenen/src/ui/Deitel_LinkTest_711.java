@@ -36,12 +36,12 @@ public class Deitel_LinkTest_711 {
 		removeItems(list1, 4, 7);
 		printList(list1);
 		printListReverse(list1);
-		
+
 		/*-----------------Extra om te oefenen op LinkedList-----------------*/
 		List<String> list1a = new LinkedList<>();
 		list1a.add("|List1a e1|");
 		list1a.add("|List1a e2|");
-		
+
 		list1.addFirst("|FIRST|"); // add op eerste plaats.
 		list1.addLast("|LAST|"); // add op laatste plaats.
 		list1.add(1, "|IND: 1|"); // add op index 1.
@@ -67,16 +67,16 @@ public class Deitel_LinkTest_711 {
 		for (String elem : list) {
 			System.out.printf("%s ", elem);
 		}
-		
+
 		System.out.println("\n");
 	}
-	
+
 	private static void printListReverse(List<String> list) {
 		System.out.printf("List: %n");
-		
+
 		// size zorgt ervoor dat de pointer weet waar te starten.
-		ListIterator<String> it = list.listIterator(list.size()); 
-		
+		ListIterator<String> it = list.listIterator(list.size());
+
 		while (it.hasPrevious()) {
 			System.out.printf("%s ", it.previous());
 		}

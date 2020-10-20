@@ -5,8 +5,6 @@
  */
 package domein;
 
-
-public class Rekening
-{
-    //...
+public class Rekening {
+	// ...
 }

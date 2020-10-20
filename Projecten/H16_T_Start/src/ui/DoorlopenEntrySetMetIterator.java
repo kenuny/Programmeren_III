@@ -21,10 +21,8 @@ public class DoorlopenEntrySetMetIterator {
 }
 
 /*
- * map.put() : element toevoegen aan de map. 
- * 	-> Tussen haakjes plaats je de elementen die moeten worden toegevoegd.  
- * map.keySet() : toont alle keys van de map.
- * 	-> Tussen haakjes blijft leeg.
- * map.get() : Om de value van één key op te halen.
- *  -> Tussen haakjes plaats je de key.
+ * map.put() : element toevoegen aan de map. -> Tussen haakjes plaats je de
+ * elementen die moeten worden toegevoegd. map.keySet() : toont alle keys van de
+ * map. -> Tussen haakjes blijft leeg. map.get() : Om de value van één key op te
+ * halen. -> Tussen haakjes plaats je de key.
  */

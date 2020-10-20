@@ -9,23 +9,23 @@ import java.util.logging.Logger;
 
 public class PersistentieController {
 
-    private BierMapper bierMapper;
+	private BierMapper bierMapper;
 
-    public List<Bier> leesBieren(File besnaam) {
-        if (bierMapper == null) {
-            bierMapper = new BierMapper();
-        }
-        return bierMapper.leesBieren(besnaam);
-    }
+	public List<Bier> leesBieren(File besnaam) {
+		if (bierMapper == null) {
+			bierMapper = new BierMapper();
+		}
+		return bierMapper.leesBieren(besnaam);
+	}
 
 //    public           void persisteerObject (     object, File bestand) {
-/*TODO stap4
-    
-        try (             ) {
-            
-        } catch (IOException ex) {
-            Logger.getLogger(BierMapper.class.getName()).log(Level.SEVERE, null, ex);
-       }
-   }*/
-        
+	/*
+	 * TODO stap4
+	 * 
+	 * try ( ) {
+	 * 
+	 * } catch (IOException ex) {
+	 * Logger.getLogger(BierMapper.class.getName()).log(Level.SEVERE, null, ex); } }
+	 */
+
 }

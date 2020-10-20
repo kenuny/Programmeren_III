@@ -10,7 +10,6 @@ public class OefenenVoorTheorie {
 
 	public static void main(String[] args) {
 
-
 		String[] kleuren = { "wit", "blauw", "groen", "rood", "geel" };
 //		String[] specialeKleuren = { "zwart", "blauw", "purper", "chilirood", "geel" };
 //		
@@ -21,14 +20,13 @@ public class OefenenVoorTheorie {
 //		
 //		System.out.println(kleurenlijst);
 
-		LinkedList<String> ll = new LinkedList<>( Arrays.asList(kleuren));
-		
+		LinkedList<String> ll = new LinkedList<>(Arrays.asList(kleuren));
+
 		LinkedList<String> llCopy = new LinkedList<>();
-		
+
 		llCopy = (LinkedList) ll.clone();
-	
-		
+
 		System.out.println(llCopy + "a");
-		
+
 	}
 }

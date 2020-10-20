@@ -1,7 +1,5 @@
 package ui;
 
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -12,28 +10,25 @@ import java.util.TreeSet;
 import domein.Student;
 import domein.StudentVergelijkenOpNaamEnVoornaam;
 
-public class StudentApplicatie
-{
+public class StudentApplicatie {
 
-    public static void main(String[] args)
-    {
-        List<Student> lijstStudenten = new ArrayList<>();
+	public static void main(String[] args) {
+		List<Student> lijstStudenten = new ArrayList<>();
 
-        
-        lijstStudenten.add(new Student(20132566,"Janssens","Wendy","Eke"));
-        lijstStudenten.add(new Student(20132567,"Janssens","Hans","Oudenaarde"));
-        lijstStudenten.add(new Student(20132563,"Janssens","Jan","Gent"));
-        lijstStudenten.add(new Student(20132564,"Karels","Matt","Gent"));
-        lijstStudenten.add(new Student(20132565,"Fransen","Luc","Gent"));
-         
-        System.out.println("Niet gesorteerd: " + lijstStudenten);
-        
-        Collections.sort(lijstStudenten);
-        System.out.println("Gesorteerd op stamboeknr: " + lijstStudenten);
-        
-        Collections.sort(lijstStudenten, new StudentVergelijkenOpNaamEnVoornaam());
-        System.out.println("Gesorteerd op naam en vnaam: " + lijstStudenten);
-        
-        lijstStudenten.sort(null);
-    }
+		lijstStudenten.add(new Student(20132566, "Janssens", "Wendy", "Eke"));
+		lijstStudenten.add(new Student(20132567, "Janssens", "Hans", "Oudenaarde"));
+		lijstStudenten.add(new Student(20132563, "Janssens", "Jan", "Gent"));
+		lijstStudenten.add(new Student(20132564, "Karels", "Matt", "Gent"));
+		lijstStudenten.add(new Student(20132565, "Fransen", "Luc", "Gent"));
+
+		System.out.println("Niet gesorteerd: " + lijstStudenten);
+
+		Collections.sort(lijstStudenten);
+		System.out.println("Gesorteerd op stamboeknr: " + lijstStudenten);
+
+		Collections.sort(lijstStudenten, new StudentVergelijkenOpNaamEnVoornaam());
+		System.out.println("Gesorteerd op naam en vnaam: " + lijstStudenten);
+
+		lijstStudenten.sort(null);
+	}
 }

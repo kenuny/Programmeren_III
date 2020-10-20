@@ -28,21 +28,20 @@ public class ObjectStreamManipulaties {
 
 	// Maak methode generiek
 	public <E> List<E> leesObjecten(File naamBestand) {
-    	List<E> li = new ArrayList<>();
-    	
-    	try(ObjectInputStream ois = new ObjectInputStream(
-    			Files.newInputStream(naamBestand.toPath()))){
-    		while(true) {
-    			li.add((E)ois.readObject());
-    		}
-    	} catch( EOFException e) {
-    		return li;
-    	} catch (IOException | ClassNotFoundException ex) {
+		List<E> li = new ArrayList<>();
+
+		try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(naamBestand.toPath()))) {
+			while (true) {
+				li.add((E) ois.readObject());
+			}
+		} catch (EOFException e) {
+			return li;
+		} catch (IOException | ClassNotFoundException ex) {
 			Logger.getLogger(ObjectStreamManipulaties.class.getName()).log(Level.SEVERE, null, ex);
 		}
-        
-    	return null;
-       
-    }
+
+		return null;
+
+	}
 
 }

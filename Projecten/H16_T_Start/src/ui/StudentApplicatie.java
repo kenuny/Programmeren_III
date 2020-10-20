@@ -14,11 +14,11 @@ public class StudentApplicatie {
 	public static void main(String[] args) {
 
 		/*
-		 * ArrayList: geschikt wanneer elementen vaak worden opgezocht of achteraan toegevoegd.
-		 * LinkedList: geschikt wanneer elementen vaak worden tussengevoegd of verwijderd.
+		 * ArrayList: geschikt wanneer elementen vaak worden opgezocht of achteraan
+		 * toegevoegd. LinkedList: geschikt wanneer elementen vaak worden tussengevoegd
+		 * of verwijderd.
 		 * 
-		 * Grootte van een lijst: size().
-		 * Grootte van een array: length().
+		 * Grootte van een lijst: size(). Grootte van een array: length().
 		 * 
 		 * natuurlijke sortering: list.sort(null)
 		 * 
@@ -32,13 +32,12 @@ public class StudentApplicatie {
 		lijstStudenten.add(new Student(20132565, "Fransen", "Luc", "Gent"));
 
 		System.out.println(lijstStudenten);
-		
-		System.out.println("");
 
+		System.out.println("");
 
 		Collections.sort(lijstStudenten, new StudentSorterenVolgensNaamEnVoornaam());
 		System.out.println("gesorteerd (comparator: naam): " + lijstStudenten);
-		
+
 		System.out.println("");
 
 		Collections.sort(lijstStudenten);

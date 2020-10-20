@@ -21,7 +21,6 @@ public class Deitel_AddAllFrequencyDisjoint_726 {
 		Collections.addAll(list2, colors);
 		System.out.printf(" After addAll, list2 contains: %s%n%n", list2);
 
-		
 		/*
 		 * Frequency retourneert het aantal keer dat een element in de lijst voortkomt.
 		 */
