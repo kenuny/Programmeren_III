@@ -1,7 +1,0 @@
-package domein;
-
-public class _ArrayList {
-
-	private static final String[] COLORS = {"MAGENTA"};
-	
-}
