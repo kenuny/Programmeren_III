@@ -158,7 +158,7 @@ public class Garage {
 		
 //		return autoOnderhoudMap.entrySet()
 //							   .stream()
-//							   .collect(Collectors.groupingBy(entry -> sizeToCategorie(entry.get)) // waar?
+//							   .collect(Collectors.groupingBy(entry -> sizeToCategorie(entry.get)) //
 		return null;
 	}
 
