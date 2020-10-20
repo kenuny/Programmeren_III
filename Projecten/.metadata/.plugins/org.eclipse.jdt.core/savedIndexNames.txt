@@ -1,23 +1,2 @@
 INDEX VERSION 1.131+C:\Users\elias\Desktop\School\Programmeren_III\Projecten\.metadata\.plugins\org.eclipse.jdt.core
-2329285967.index
-616418128.index
-2662538901.index
-26819219.index
-841672694.index
-2474573971.index
-2275503491.index
-3145041224.index
-3404423788.index
-102783628.index
-1248453005.index
-1547371581.index
-3767279950.index
-284457794.index
-719052286.index
-849117200.index
-3138209112.index
-3760915888.index
 768219936.index
-2677301156.index
-1665573304.index
-3759514528.index
