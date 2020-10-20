@@ -1,0 +1,18 @@
+package ui;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Deitel_UsingToArray_715 {
+
+	public static void main(String[] args) {
+
+		String[] colors = { "black", "blue", "yellow" };
+		LinkedList<String> kleurenlijst = new LinkedList<>();
+		
+		kleurenlijst.addLast("red");
+		kleurenlijst.addFirst("pink");
+		kleurenlijst.add(1, "green");
+		kleurenlijst.add("cyan");
+	}
+}

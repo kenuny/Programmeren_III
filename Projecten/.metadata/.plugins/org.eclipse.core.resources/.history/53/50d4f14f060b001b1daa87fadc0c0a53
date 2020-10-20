@@ -1,0 +1,12 @@
+package ui;
+
+public class Deitel_ShuffleList_721 {
+
+	public static void main(String[] args) {
+		public enum Face{ Ace, Deuce, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King};
+		
+		
+		
+		
+	}
+}

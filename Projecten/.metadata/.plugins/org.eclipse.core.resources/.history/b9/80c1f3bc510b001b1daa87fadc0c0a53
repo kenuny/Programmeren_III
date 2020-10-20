@@ -1,0 +1,18 @@
+package ui;
+
+import java.util.List;
+
+public class Deitel_FactoryMethods_737 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Factory methods zijn methodes die ervoor zorgen dat je gemakkelijk een
+		 * collection kan aanmaken die declaratie niet wijzigbaar is.
+		 */
+
+		List<String> colorsList = List.of("red", "orange", "yellow", "green", "blue", "violet", "indigo");
+		
+	}
+
+}

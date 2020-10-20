@@ -1,0 +1,13 @@
+package ui;
+
+public class Deitel_ShuffleList_721 {
+
+	public static void main(String[] args) {
+		
+		String[] colors = { "White", "Yellow", "Blue", "Green", "Black" };
+		
+	}
+	
+	
+
+}

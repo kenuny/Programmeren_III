@@ -1,0 +1,27 @@
+package ui;
+
+import domein.Auteur;
+import java.util.HashMap;
+import java.util.Map;
+
+public class DoorlopenEntrySetMetIterator {
+
+	public static void main(String args[]) {
+
+		Map<Integer, Auteur> auteurs = new HashMap<>();
+
+		auteurs.put(1234, new Auteur("Chevallier", "Robert"));
+		auteurs.put(876, new Auteur("Gosling", "James"));
+		auteurs.put(5648, new Auteur("Chapman", "Steve"));
+
+		for (int key : auteurs.keySet())
+			System.out.printf("%s\t%s%n", key, auteurs.get(key));
+		
+	}
+}
+
+/*
+ * map.put(nuttige waarden) -> element toevoegen aan de map.
+ * map.keySet() -> key ophalen uit de map.
+ * map.get(de key) -> om de value van een key op te halen.
+ */

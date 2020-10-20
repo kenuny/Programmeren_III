@@ -1,0 +1,45 @@
+package ui;
+
+import java.util.*;
+
+public class OefFruit1_opgave {
+
+    public static void main(String args[]) {
+        String[] x_array = {"appel", "peer", "citroen", "kiwi"};
+        String[] y_array = {"banaan", "mango", "citroen", "kiwi", "zespri"};
+
+    /*
+     * Behandel arX en arY als Collections en maak gebruik van de bulk
+     * operaties om volgende output te leveren:
+     * In y zit extra [banaan, mango, zespri]
+     * In x zit extra [appel, peer]
+     * x en y hebben gemeenschappelijk [citroen, kiwi]
+    */
+        
+        // Maak van de arrays x_array en y_array een statische lijst.
+        // Statisch betekent dat er geen bewerkingen op kunnen worden toegepast
+        Collection<String> x_statischLijst = Arrays.asList(x_array);
+        Collection<String> y_statischLijst = Arrays.asList(y_array);
+        
+        // Maak van de statische lijst een dynamische lijst.
+        List<String> x_dynamischeLijst = new ArrayList<>(x_statischLijst);
+        List<String> y_dynamischeLijst = new ArrayList<>(y_statischLijst);
+        
+        y_dynamischeLijst.removeAll(x_statischLijst); 
+        System.out.printf("In arY zonder arX zit: %s%n", y_dynamischeLijst);
+
+
+        x_dynamischeLijst.removeAll(y_statischLijst);
+        System.out.printf("In arX zonder arY zit: %s%n", x_dynamischeLijst);
+      
+        
+        List<String> res3 = new ArrayList<>(x_statischLijst);
+        res3.retainAll(y_statischLijst);
+        System.out.printf("arX en arY hebben gemeenschappelijk: %s%n", res3);
+//        
+        
+        
+
+        
+    }
+}
