@@ -1,0 +1,35 @@
+package ui;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Deitel_ShuffleReverseFillCopyMaxMin_721 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Shuffle lijst:
+		 * Door gebruik te maken van een statische methode van de klasse Collections.
+		 */
+
+		String[] colors = { "White", "Yellow", "Blue", "Green", "Black" };
+		List<String> kleurenlijst = Arrays.asList(colors);
+		System.out.printf("Originele lijst: %s%n%n", kleurenlijst);
+
+		Collections.sort(kleurenlijst);
+		System.out.printf("Gesorteerde kleurenlijst: %s%n%n", kleurenlijst);
+
+		Collections.shuffle(kleurenlijst);
+		System.out.printf("Geshuffelde kleurenlijst: %s%n%n", kleurenlijst);
+		
+		/*
+		 * 
+		 * */
+		
+		Character[] letters = { 'P', 'C', 'M' };
+		
+
+	}
+
+}

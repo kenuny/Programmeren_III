@@ -1,0 +1,8 @@
+package ui;
+
+public class Deitel_SortingList_717 {
+
+	public static void main(String[] args) {
+		String[] suits = {"Hearths", "Diamonds", "Clubs", "Spades"};
+	}
+}

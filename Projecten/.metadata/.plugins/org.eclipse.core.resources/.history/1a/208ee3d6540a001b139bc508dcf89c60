@@ -1,0 +1,11 @@
+package domein;
+
+public class _ArrayList {
+
+	private static final String[] COLORS = {"MAGENTA", "RED", "WHITE", "BLUE", "CYAN"};
+
+	private static final String[] REMOVECOLORS= {"RED", "WHITE", "BLUE"};
+	
+	
+	
+}

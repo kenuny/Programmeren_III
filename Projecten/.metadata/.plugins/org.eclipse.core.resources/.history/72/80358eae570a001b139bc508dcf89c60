@@ -1,0 +1,28 @@
+package domein;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class _ArrayList {
+
+	private static final String[] COLORS = {"MAGENTA", "RED", "WHITE", "BLUE", "CYAN"};
+	private static final String[] REMOVECOLORS= {"RED", "WHITE", "BLUE"};
+	
+	List<String> kleurenlijst = new ArrayList<String>();
+	
+	public _ArrayList() {
+		for (String kleur : COLORS) {
+			kleurenlijst.add(kleur);
+		}
+	}
+
+	public List<String> getKleurenlijst() {
+		return kleurenlijst;
+	}
+
+	public void setKleurenlijst(List<String> kleurenlijst) {
+		this.kleurenlijst = kleurenlijst;
+	}
+	
+	
+}

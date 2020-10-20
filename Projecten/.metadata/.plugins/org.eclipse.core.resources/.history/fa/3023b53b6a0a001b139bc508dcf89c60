@@ -1,0 +1,28 @@
+package ui;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Deitel_CollectionTest_709 {
+
+	public static void main(String[] args) {
+		
+		/*------Creëer array en dynamische lijst met elementen van de array-----*/
+		String[] colors = { "MAGENTA", "RED", "WHITE", "BLUE", "CYAN" };
+		List<String> list = new ArrayList<>();
+
+		for (String color : colors)
+			list.add(color);
+
+		String[] removeColors = { "RED", "WHITE", "BLUE" };
+		List<String> removeList = new ArrayList<>();
+
+		for (String color : removeColors)
+			removeList.add(color);
+
+		
+		/*-------------------------------------------------------------*/
+		
+		
+	}
+}

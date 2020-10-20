@@ -1,0 +1,12 @@
+package main;
+
+import ui.Applicatie;
+
+public class StartUp {
+
+	public static void main(String[] args) {
+		Applicatie app = new Applicatie();
+		app.start();
+	}
+
+}

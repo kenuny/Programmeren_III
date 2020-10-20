@@ -1,0 +1,9 @@
+package ui;
+
+public class Deitel_CollectionTest_709 {
+
+	public static void main(String[] args) {
+		String[] colors = {"MAGENTA", "RED", "WHITE", "BLUE", "CYAN"};
+		List<String> 
+	}
+}

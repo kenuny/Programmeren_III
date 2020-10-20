@@ -1,0 +1,30 @@
+package ui;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Applicatie {
+	
+	public void start() {
+				
+		System.out.println("Maak een lege ArrayList aan: ");
+		List<String> kleurenlijst = new ArrayList<String>();
+		
+		System.out.println("Voeg 3 kleuren toe: ");
+		kleurenlijst.add("Rood");
+		kleurenlijst.add("Groen");
+		kleurenlijst.add("Blauw");
+				
+		System.out.println("Print kleurenlijst:");
+		System.out.println(kleurenlijst);
+		
+		System.out.println("\nVoeg BLACK toe:");
+		kleurenlijst.add("BLACK");
+		System.out.println(kleurenlijst);
+		
+		System.out.println("\nVerwijder RED: ");
+		kleurenlijst.remove(kleurenlijst.indexOf("RED"));
+		System.out.println(kleurenlijst);
+	}
+	
+}

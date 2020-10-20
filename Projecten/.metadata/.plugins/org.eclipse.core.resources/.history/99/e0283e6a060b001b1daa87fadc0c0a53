@@ -1,0 +1,9 @@
+package ui;
+
+public class Deitel_ShuffleList_721 {
+
+		public enum Face { Ace, Deuce, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King};
+		public enum Suit { Clubs, Diamonds, Hearths, Spades };
+		
+		
+}

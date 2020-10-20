@@ -1,0 +1,34 @@
+package ui;
+
+import java.util.Arrays;
+
+public class Deitel_ArrayManipulations_351 {
+
+	public static void main(String[] args) {
+
+		boodschap("Declareert een array van doubles: doubleArray:");
+		double[] doubleArray = { 8.4, 9.3, 0.2, 7.9, 3.4 };
+		printArray(doubleArray);
+
+		boodschap("Sorteerd de Array:  ");
+		Arrays.sort(doubleArray);
+		printArray(doubleArray);
+
+		boodschap("Declareert een array van 10 elementen groot en vult elk element met de waarde 7:");
+		int[] filledInArray = new int[10];
+		Arrays.fill(filledInArray, 1);
+		Arrays.fill(filledInArray, 7); // Overschrijft elk element met de waarde 7
+		System.out.println(Arrays.toString(filledInArray) + "\n");
+
+		int[] intArray = { 1, 2, 3, 4, 5, 6 };
+
+	}
+
+	private static void printArray(double[] array) {
+		System.out.println(Arrays.toString(array) + "\n");
+	}
+
+	private static void boodschap(String boodschap) {
+		System.out.print(boodschap + "\n");
+	}
+}

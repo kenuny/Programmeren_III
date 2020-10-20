@@ -1,0 +1,10 @@
+package ui;
+
+public class Deitel_UsingToArray_715 {
+
+	public static void main(String[] args) {
+
+		String[] colors = { "black", "blue", "yellow" };
+
+	}
+}
