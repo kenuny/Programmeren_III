@@ -1,1 +1,1 @@
-# H20: Generiek programmeren
+# H23: Multithreading
