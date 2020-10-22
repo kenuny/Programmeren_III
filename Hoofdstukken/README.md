@@ -57,19 +57,19 @@
 
 **Hoofdstuk 23:** Multithreading
 
-| Onderdeel | Bestandsnaam                 |                             Link                             | Done |
-| :-------: | ---------------------------- | :----------------------------------------------------------: | :--: |
-|  Theorie  | Slides - Hoofdstuk 23        | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243132&browser=Table&tool_action=Viewer&publication=1624845) |      |
-|  Theorie  | Project - ConsProdZonderSync | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H20_T_ConsProdMetSyn) |      |
-|  Theorie  | Project - ConsProdMetSync    |                            [Link]                            |      |
-|  Theorie  | Project -                    |                            [Link]                            |      |
-|  Theorie  | Project -                    |                            [Link]                            |      |
-|  Theorie  | Project -                    |                            [Link]                            |      |
-|  Theorie  | Project -                    |                            [Link]                            |      |
-|   <br>    |                              |                                                              |      |
-| Oefening  | Slides - Opgave teller       | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243133&browser=Table&tool_action=Viewer&publication=1624829) |      |
-| Oefening  | Project - Teller             |                            [Link]                            |      |
-|           |                              |                                                              |      |
-|           |                              |                            [Link]                            |      |
-|           |                              |                                                              |      |
-|           |                              |                                                              |      |
+| Onderdeel | Bestandsnaam                                |                             Link                             | Done |
+| :-------: | ------------------------------------------- | :----------------------------------------------------------: | :--: |
+|  Theorie  | Slides - Hoofdstuk 23                       | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243132&browser=Table&tool_action=Viewer&publication=1624845) |      |
+|  Theorie  | Project - ConsProdMetSyn                    | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_ConsProdMetSyn) |      |
+|  Theorie  | Project - ConsProdMetSyn ArrayBlockingQueue | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_ConsProdMetSyn_ArrayBlockingQueue) |      |
+|  Theorie  | Project - ProdConsZonderSyn                 | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_ProdConsZonderSyn) |      |
+|  Theorie  | Project - Restaurant start                  | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_Restaurant_Start) |      |
+|  Theorie  | Project - ParallelStream                    | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_VoorbeeldSlides_ParallelStream) |      |
+|  Theorie  | Project - Zwembad start                     | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_T_Zwembad_Start) |      |
+|   <br>    |                                             |                                                              |      |
+| Oefening  | Slides - Opgave teller                      | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243133&browser=Table&tool_action=Viewer&publication=1624829) |      |
+| Oefening  | Project - Teller                            | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_O_lab_Teller_start) |      |
+|           |                                             |                                                              |      |
+|           |                                             |                            [Link]                            |      |
+|           |                                             |                                                              |      |
+|           |                                             |                                                              |      |
