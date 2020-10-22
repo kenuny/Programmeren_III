@@ -14,7 +14,7 @@
 
 ***Wat is een collection framework?***
 
-- Een *collection framework* is een raamwerk (= uniforme architectuur) voor het <u>weergeven</u> en <u>manipuleren</u> van <u>verschillende soorten collections</u>, waardoor collections onafhankelijk van hun implementatie kunnen worden gemanipuleerd. [Collection Framework Hierarchy](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Hoofdstuk_16/Theorie/Afbeeldingen/java-collection-framework-hierarchy.jpg).
+- Een *collection framework* is een raamwerk (= uniforme architectuur) voor het <u>weergeven</u> en <u>manipuleren</u> van <u>verschillende soorten collections</u>, waardoor collections onafhankelijk van hun implementatie kunnen worden gemanipuleerd. [Collection Framework Hierarchy](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/Aanvullingen/Afbeeldingen/java-collection-framework-hierarchy.jpg).
 
 ***Verschil tussen klasse Arrays en Klasse Collections?***
 
