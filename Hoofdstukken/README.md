@@ -14,6 +14,7 @@
 |   Oefening   | Project - Garage                              | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_O_Garage) |  x   |
 |     <br>     |                                               |                                                              |      |
 | Samenvatting | Hoofdstuk 16                                  |                            [Link]                            |  x   |
+|     <br>     |                                               |                                                              |      |
 
 <br>
 
