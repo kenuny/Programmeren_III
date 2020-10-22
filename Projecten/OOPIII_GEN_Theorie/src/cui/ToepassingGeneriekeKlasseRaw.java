@@ -21,7 +21,7 @@ public class ToepassingGeneriekeKlasseRaw {
 		GeneriekeKlasse student3 = new GeneriekeKlasse<Student>(new Student(20132566,"Janssens","Wendy","Eke"));
 
 		System.out.println(student3.getEersteAttribuut());
-		System.out.print(student3.getEersteAttribuut().getStamboeknr());
+		// System.out.print(student3.getEersteAttribuut().getStamboeknr());
 	}
 
 }
