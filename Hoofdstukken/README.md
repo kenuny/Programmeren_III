@@ -14,7 +14,7 @@
 |   Oefening   | Project - Garage                              | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_O_Garage) |  x   |
 |   Oefening   | Project - Eigen leerproject                   | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_E_Oefenen) |  x   |
 |     <br>     |                                               |                                                              |      |
-| Samenvatting | Hoofdstuk 16                                  |                            [Link]                            |  x   |
+| Samenvatting | Hoofdstuk 16                                  | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H16_Overzicht_Samenvatting.md) |  x   |
 |     <br>     |                                               |                                                              |      |
 
 <br>
@@ -31,24 +31,25 @@
 |     <br>     |                                   |                                                              |      |
 |   Oefening   | Slides - Opgave bier              | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243126&browser=Table&tool_action=Viewer&publication=1624848) |  x   |
 |   Oefening   | Project - Bier                    | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H17_O_Bier) |  x   |
-|   Oefening   | Slides - Vliegmaatschappij        | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243126&browser=Table&tool_action=Viewer&publication=1634613) |      |
-|   Oefening   | Project -                         |                                                              |      |
+|   Oefening   | Slides - Opgave vliegmaatschappij | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243126&browser=Table&tool_action=Viewer&publication=1634613) |      |
+|   Oefening   | Project - Vliegmaatschappij       | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H17_O_Vliegmaatschappij) |      |
 |     <br>     |                                   |                                                              |      |
-| Samenvatting |                                   |                                                              |      |
+| Samenvatting | Hoofdstuk 17                      | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H17_Overzicht_Samenvatting.md) |      |
+|     <br>     |                                   |                                                              |      |
 
 <br>
 
 **Hoofdstuk 20:** Generiek programmeren
 
-| Hoofdstuk | Bestandsnaam | Link | Done |
-| --------- | ------------ | :--: | :--: |
-| 20 - S    |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
-|           |              |      |      |
+|  Onderdeel   | Bestandsnaam               |                             Link                             | Done |
+| :----------: | -------------------------- | :----------------------------------------------------------: | :--: |
+|   Theorie    | Slides - Hoofdstuk 20      | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243127&browser=Table&tool_action=Viewer&publication=1624847) |      |
+|   Theorie    | Project - Extra theorie    | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H20_T_ExtraTheorie) |  x   |
+|   Theorie    | Project - Generics         | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H20_T_Generics) |      |
+|     <br>     |                            |                                                              |      |
+|   Oefening   | Slides - Opgave Lab MyList | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243128&browser=Table&tool_action=Viewer&publication=1624846) |      |
+|   Oefening   | Project - Lab MyList       | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H20_O_Lab_DAT_Mylist) |      |
+|     <br>     |                            |                                                              |      |
+| Samenvatting | Hoofdstuk 20               | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H20_Overzicht_Samenvatting.md) |      |
+|     <br>     |                            |                                                              |      |
 
