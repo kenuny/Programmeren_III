@@ -12,6 +12,7 @@
 |     <br>     |                                               |                                                              |      |
 |   Oefening   | Slides - Opgave garage                        | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243124&browser=Table&tool_action=Viewer&publication=1624838) |  x   |
 |   Oefening   | Project - Garage                              | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_O_Garage) |  x   |
+|   Oefening   | Project - Eigen leerproject                   | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H16_E_Oefenen) |  x   |
 |     <br>     |                                               |                                                              |      |
 | Samenvatting | Hoofdstuk 16                                  |                            [Link]                            |  x   |
 |     <br>     |                                               |                                                              |      |
