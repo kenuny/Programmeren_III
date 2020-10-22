@@ -53,3 +53,23 @@
 | Samenvatting | Hoofdstuk 20               | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H20_Overzicht_Samenvatting.md) |      |
 |     <br>     |                            |                                                              |      |
 
+<br>
+
+**Hoofdstuk 23:** Multithreading
+
+| Onderdeel | Bestandsnaam                 |                             Link                             | Done |
+| :-------: | ---------------------------- | :----------------------------------------------------------: | :--: |
+|  Theorie  | Slides - Hoofdstuk 23        | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243132&browser=Table&tool_action=Viewer&publication=1624845) |      |
+|  Theorie  | Project - ConsProdZonderSync | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H20_T_ConsProdMetSyn) |      |
+|  Theorie  | Project - ConsProdMetSync    |                            [Link]                            |      |
+|  Theorie  | Project -                    |                            [Link]                            |      |
+|  Theorie  | Project -                    |                            [Link]                            |      |
+|  Theorie  | Project -                    |                            [Link]                            |      |
+|  Theorie  | Project -                    |                            [Link]                            |      |
+|   <br>    |                              |                                                              |      |
+| Oefening  | Slides - Opgave teller       | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243133&browser=Table&tool_action=Viewer&publication=1624829) |      |
+| Oefening  | Project - Teller             |                            [Link]                            |      |
+|           |                              |                                                              |      |
+|           |                              |                            [Link]                            |      |
+|           |                              |                                                              |      |
+|           |                              |                                                              |      |
