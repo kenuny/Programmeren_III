@@ -70,5 +70,5 @@
 |   Oefening   | Slides - Opgave teller                      | [Link](https://chamilo.hogent.be/index.php?go=CourseViewer&application=Chamilo%5CApplication%5CWeblcms&course=38255&tool=Document&publication_category=243133&browser=Table&tool_action=Viewer&publication=1624829) |      |
 |   Oefening   | Project - Teller                            | [Link](https://github.com/DeSmetElias/Programmeren_III/tree/master/Projecten/H23_O_lab_Teller_start) |      |
 |     <br>     |                                             |                                                              |      |
-| Samenvatting |                                             | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H23_Overzicht_Samenvatting.md) |      |
+| Samenvatting | Hoofdstuk 23                                | [Link](https://github.com/DeSmetElias/Programmeren_III/blob/master/Hoofdstukken/H23_Overzicht_Samenvatting.md) |      |
 |     <br>     |                                             |                                                              |      |
