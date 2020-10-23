@@ -35,7 +35,7 @@ public class MyListIterable<T extends Serializable> implements Iterable<T>, Seri
 
 		StringBuilder buffer = new StringBuilder();
 		buffer.append("The ").append(nameList).append(" is: ");
-		Node current = firstNode;
+		Node<T> current = firstNode;
 		while (current != null) {
 			buffer.append(current.getData()).append("    ");
 			current = current.getNext();
