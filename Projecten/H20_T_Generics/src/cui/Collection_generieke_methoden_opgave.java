@@ -1,6 +1,7 @@
 package cui;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Collection_generieke_methoden_opgave {
 
@@ -18,14 +19,14 @@ public class Collection_generieke_methoden_opgave {
 		String[] woorden = { "aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh", "a" };
 		List<String> stringLijst = new ArrayList<>(Arrays.asList(woorden));
 
-//methode minimum oproepen
+		// Methode minimum oproepen
 		Integer minGetal1 = minimum(integerLijst);
 		Double minGetal2 = minimum(doubleLijst);
 
 		System.out.printf("%s%d\n\n", "oplossing is -6, jouw oplossing = ", minGetal1);
 		System.out.printf("%s%.1f\n\n", "oplossing is 3.0, jouw oplossing = ", minGetal2);
 
-//methode geefAlleElementenKleinerDan oproepen
+		// methode geefAlleElementenKleinerDan oproepen
 		List<Integer> lijstInteger = geefAlleElementenKleinerDan(integerLijst, 8);
 		List<String> lijstString = geefAlleElementenKleinerDan(stringLijst, "ddd");
 
@@ -47,6 +48,16 @@ public class Collection_generieke_methoden_opgave {
 	// van type E teruggeeft.
 	// ------------------------------------------------------------------------
 
+	// <E extends Comparable<E>> zegt dat het enkel kan werken met types die de
+	// klasse Comparable implementeren.
+	public <E extends Comparable<E>> E minimum(Collection<E> lijst) {
+
+		// Alle elementen van het type E via de compare to gaan vergelijken, stream gaat
+		// overlopen en kijt wat het kleinste is maar min is geen terminal operation van
+		// daar moet je get gebruike n
+		return lijst.stream().min(E::compareTo).get();
+	}
+
 	// -------------------------------------------------------------------------------------
 	// Schrijf de generieke methode geefAlleElementenKleinerDan
 	// De methode heeft twee argumenten: een Collection van type E "lijst" en een
@@ -55,4 +66,12 @@ public class Collection_generieke_methoden_opgave {
 	// die kleiner
 	// zijn dan "grens" worden in de arrayList bewaard.
 	// -------------------------------------------------------------------------------------
+
+	public <E extends Comparable<E>> List<E> geefAlleElementenKleinerDan(Collection<E> lijst, E grens) {
+
+		return lijst.stream()
+					.filter(el -> el.compareTo(grens) < 0)
+					.collect(Collectors.toList());
+	}
+
 }

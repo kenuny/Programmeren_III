@@ -1,23 +1,65 @@
 package domein;
 
-public class Node {
+import java.io.Serializable;
 
-	private final String data;
-	private Node next;
+public class Node<T extends Serializable> implements Serializable{
 
-	public Node(String data) {
+	private final T data;
+	private Node<T> next;
+
+	public Node(T data) {
 		this.data = data;
 	}
 
-	public String getData() {
+	public T getData() {
 		return data;
 	}
 
-	public final void setNext(Node next) {
+	public final void setNext(Node<T> next) {
 		this.next = next;
 	}
 
-	public Node getNext() {
+	public Node<T> getNext() {
 		return next;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Oorspronkelijke klasse.
+//package domein;
+//
+//public class Node {
+//
+//	private final String data;
+//	private Node next;
+//
+//	public Node(String data) {
+//		this.data = data;
+//	}
+//
+//	public String getData() {
+//		return data;
+//	}
+//
+//	public final void setNext(Node next) {
+//		this.next = next;
+//	}
+//
+//	public Node getNext() {
+//		return next;
+//	}
+//}

@@ -2,7 +2,7 @@ package domein;
 
 import exceptions.EmptyListException;
 
-public class MyList {
+public class MyList<T> {
 
 	private Node firstNode;
 	private Node lastNode;
@@ -57,12 +57,12 @@ public class MyList {
 		}
 	}
 
-	public String removeFromFront() throws EmptyListException {
+	public T removeFromFront() throws EmptyListException {
 		if (isEmpty()) {
 			throw new EmptyListException(nameList);
 		}
 
-		String removedItem = firstNode.getData();
+		T removedItem = firstNode.getData();
 		if (firstNode == lastNode) {
 			firstNode = lastNode = null;
 		} else {
