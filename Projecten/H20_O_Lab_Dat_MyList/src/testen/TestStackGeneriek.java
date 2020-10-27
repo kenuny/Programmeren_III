@@ -60,14 +60,14 @@ public class TestStackGeneriek {
 		Assertions.assertTrue(decGetallenStack.isEmpty());
 	}*/
 
-	@Test
-	public void toevoegenVerwijderenTesten()
-	{
-		String[] woorden = {"lekker", "zijn", "wafels"};
-		Double[] decGetallen = {12.5, 24.3, 30.5, 40.5};
-		itemsToevoegenVerwijderen(woordenStack, woorden);
-		itemsToevoegenVerwijderen(decGetallenStack, decGetallen);
-	}
+//	@Test
+//	public void toevoegenVerwijderenTesten()
+//	{
+//		String[] woorden = {"lekker", "zijn", "wafels"};
+//		Double[] decGetallen = {12.5, 24.3, 30.5, 40.5};
+//		itemsToevoegenVerwijderen(woordenStack, woorden);
+//		itemsToevoegenVerwijderen(decGetallenStack, decGetallen);
+//	}
 
 	//public void itemsToevoegenVerwijderen(MyStack myStack,     items){
 

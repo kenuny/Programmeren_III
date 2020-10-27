@@ -18,15 +18,8 @@ public class SharedBufferTest
 
       // try to start producer and consumer giving each of them access
       // to sharedLocation
-      try 
-      {
          application.execute( new Producer( sharedLocation ) );
          application.execute( new Consumer( sharedLocation ) );
-      } // end try
-      catch ( Exception exception )
-      {
-         exception.printStackTrace();
-      } // end catch
 
       application.shutdown(); // terminate application when threads end
    } // end main
